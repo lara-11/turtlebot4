@@ -37,7 +37,7 @@
  }
 
  div.locobot-sec2-line {
-     height: 2px; 
+     height: 2px;
      background: #1a272d;
      margin: 10px 290px 15px 0px;
  }
@@ -45,7 +45,7 @@
  p.locobot-sec2-p {
      max-width: 670px;
      text-align: justify;
- } 
+ }
 
  div.locobot-sec2-box2 {
      padding: 60px 120px 60px 50px;
@@ -154,274 +154,295 @@
  }
 
  /* BOTH CHARTS */
-a.turtlebot-sec3-link-all {
-    margin-bottom: 5px;
-}
+ a.turtlebot-sec3-link-all {
+     margin-bottom: 5px;
+ }
 
-td,
-th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
+ td,
+ th {
+     border: 1px solid #dddddd;
+     text-align: left;
+     padding: 8px;
+ }
 
-/* Color of table */
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
+ /* Color of table */
+ tr:nth-child(even) {
+     background-color: #dddddd;
+ }
 
-/* TABLET */
-@media only screen and (max-width: 1024px) {
-    a.turtlebot-sec3-link-all {
-        font-size: 2vw;
-    }
+ /* TABLET */
+ @media only screen and (max-width: 1024px) {
+     a.turtlebot-sec3-link-all {
+         font-size: 2vw;
+     }
 
-    a.turtlebot-sec3-link2-all {
-        font-size: 2vw;
-    }
+     a.turtlebot-sec3-link2-all {
+         font-size: 2vw;
+     }
 
-    td,
-    th {
-        font-size: 15px;
-    }
-}
+     td,
+     th {
+         font-size: 15px;
+     }
+ }
 
-/* MOBILE */
-@media only screen and (max-width: 736px) {
-    a.turtlebot-sec3-link-all {
-        font-size: 10px;
-        margin: 5px 0px 0px 0px;
-    }
+ /* MOBILE */
+ @media only screen and (max-width: 736px) {
+     a.turtlebot-sec3-link-all {
+         font-size: 10px;
+         margin: 5px 0px 0px 0px;
+     }
 
-    a.turtlebot-sec3-link2-all {
-        font-size: 10px;
-    }
+     a.turtlebot-sec3-link2-all {
+         font-size: 10px;
+     }
 
-    td,
-    th {
-        font-size: 11px;
-        padding: 5px;
-        width: 100px;
-    }
-}
+     td,
+     th {
+         font-size: 11px;
+         padding: 5px;
+         width: 100px;
+     }
+ }
 
  /* SECTION 3 */
-div.turtlebot-container3 {
-    display: flex;
-    justify-content: center;
-    padding: 40px 0px 25px 0px;
-}
+ div.turtlebot-container3 {
+     display: flex;
+     justify-content: center;
+     padding: 40px 0px 25px 0px;
+ }
 
-div.turtlebot-sec3-box1 {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0px 40px 0px 40px;
-}
+ div.turtlebot-sec3-box1 {
+     width: 100%;
+     max-width: 1200px;
+     margin: 0px 40px 0px 40px;
+ }
 
-h1.turtlebot-sec3-h1 {
-    font-size: 62px;
-    text-align: center;
-    color: #1a272d;
-    margin: 0px 0px 0px 0px;
-}
+ h1.turtlebot-sec3-h1 {
+     font-size: 62px;
+     text-align: center;
+     color: #1a272d;
+     margin: 0px 0px 0px 0px;
+ }
 
-div.turtlebot-sec3-line {
-    height: 2px;
-    background: #1a272d;
-    margin: 15px 450px 30px 450px;
-}
+ div.turtlebot-sec3-line {
+     height: 2px;
+     background: #1a272d;
+     margin: 15px 450px 30px 450px;
+ }
 
-table.turtlebot-sec3-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
+ table.turtlebot-sec3-table {
+     font-family: arial, sans-serif;
+     border-collapse: collapse;
+     width: 100%;
+ }
 
-img.tutlebot-logo {
-    width: 200px;
-}
+ img.tutlebot-logo {
+     width: 200px;
+ }
 
-td.center-align,
-th.center-align {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-    text-align: center;
-}
+ td.center-align-product,
+ th.center-align-product {
+     border: 1px solid #dddddd;
+     text-align: left;
+     padding: 8px;
+     text-align: center;
+ }
 
-th.center-align-dark {
-    color: white;
-    background: #00cfff;
-    border: 1px solid #00cfff;
-    border-top: 1.1px solid #00cfff;
-    border-left: 1.1px solid #00cfff;
-    text-align: left;
-    padding: 8px;
-    text-align: center;
-}
+ td.center-align,
+ th.center-align {
+     border: 1px solid #dddddd;
+     text-align: left;
+     padding: 8px;
+     text-align: center;
+     display: flex;
+     flex-flow: column;
+ }
 
-th.center-align-light {
-    color: white;
-    background: #7be6ff;
-    border: 1px solid #7be6ff;
-    border-left: 1.1px solid #7be6ff;
-    text-align: left;
-    padding: 8px;
-    text-align: center;
-}
+ th.center-align-dark {
+     color: white;
+     background: #00cfff;
+     border: 1px solid #00cfff;
+     border-top: 1.1px solid #00cfff;
+     border-left: 1.1px solid #00cfff;
+     text-align: left;
+     padding: 8px;
+     text-align: center;
+ }
 
-/* Responsive fix */
-@media only screen and (max-width: 1176px) {
-    div.turtlebot-container3 {
-        flex-wrap: wrap;
-    }
-}
+ th.center-align-light {
+     color: white;
+     background: #7be6ff;
+     border: 1px solid #7be6ff;
+     border-left: 1.1px solid #7be6ff;
+     text-align: left;
+     padding: 8px;
+     text-align: center;
+ }
 
-/* TABLET */
-@media only screen and (max-width: 1024px) {
-    div.turtlebot-container3 {
-        padding-bottom: 40px;
-        flex-flow: wrap;
-    }
+ b {
+     margin-bottom: 30px;
+     margin-top: 20px;
+ }
 
-    div.turtlebot-sec3-box1 {
-        margin: 0px 40px 0px 40px;
-    }
+ img.turtlebot-sec3-img {
+     width: 250px;
+     margin-left: auto;
+     margin-right: auto;
+ }
 
-    h1.turtlebot-sec3-h1 {
-        font-size: 6vw;
-    }
+ /* Responsive fix */
+ @media only screen and (max-width: 1176px) {
+     div.turtlebot-container3 {
+         flex-wrap: wrap;
+     }
+ }
 
-    div.turtlebot-sec3-line {
-        width: auto;
-        margin: 10px 300px 20px 300px;
-    }
-}
+ /* TABLET */
+ @media only screen and (max-width: 1024px) {
+     div.turtlebot-container3 {
+         padding-bottom: 40px;
+         flex-flow: wrap;
+     }
 
-/* MOBILE */
-@media only screen and (max-width: 736px) {
-    div.turtlebot-container3 {
-        flex-wrap: wrap;
-        padding: 20px 0px 0px 0px;
-        margin-bottom: 20px;
-    }
+     div.turtlebot-sec3-box1 {
+         margin: 0px 40px 0px 40px;
+     }
 
-    div.turtlebot-sec3-box1 {
-        margin: 0px 0px 0px 0px;
-    }
+     h1.turtlebot-sec3-h1 {
+         font-size: 6vw;
+     }
 
-    th.table-blank-square {
-        width: auto;
-    }
+     div.turtlebot-sec3-line {
+         width: auto;
+         margin: 10px 300px 20px 300px;
+     }
+ }
 
-    h1.turtlebot-sec3-h1 {
-        font-size: 45px;
-        padding: 0px 0px 0px 0px;
-    }
+ /* MOBILE */
+ @media only screen and (max-width: 736px) {
+     div.turtlebot-container3 {
+         flex-wrap: wrap;
+         padding: 20px 0px 0px 0px;
+         margin-bottom: 20px;
+     }
 
-    div.turtlebot-sec3-line {
-        margin: 5px 150px 15px 150px;
-    }
-}
+     div.turtlebot-sec3-box1 {
+         margin: 0px 0px 0px 0px;
+     }
 
-/* SECTION 4 */
-div.turtlebot-container4 {
-    display: flex;
-    justify-content: center;
-    padding: 40px 0px 25px 0px;
-  }
- 
-  div.turtlebot-sec4-box1 {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0px 40px 0px 40px;
-  }
- 
-  h1.turtlebot-sec4-h1 {
-    font-size: 62px;
-    text-align: center;
-    color: #1a272d;
-    margin: 0px 0px 0px 0px;
-  }
- 
-  div.turtlebot-sec4-line {
-    height: 2px;
-    background: #1a272d;
-    margin: 15px 450px 30px 450px;
-  }
- 
-  table.turtlebot-sec4-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
- 
-  th.table-blank-square {
-    width: 135px;
-  }
- 
-  h1.turtlebot-sec4-models1,
-  h1.turtlebot-sec4-models2,
-  h1.turtlebot-sec4-models3,
-  h1.turtlebot-sec4-models4 {
-    font-size: 17px;
-    text-align: center;
-    color: #1a272d;
-  }
- 
-  /* Responsive fix */
-  @media only screen and (max-width: 1176px) {
-    div.turtlebot-container4 {
-      flex-wrap: wrap;
-    }
-  }
- 
-  /* TABLET */
-  @media only screen and (max-width: 1024px) {
-    div.turtlebot-container4 {
-      padding-bottom: 40px;
-      flex-flow: wrap;
-    }
- 
-    div.turtlebot-sec4-box1 {
-      margin: 0px 40px 0px 40px;
-    }
- 
-    h1.turtlebot-sec4-h1 {
-      font-size: 6vw;
-    }
- 
-    div.turtlebot-sec4-line {
-      width: auto;
-      margin: 10px 300px 20px 300px;
-    }
-  }
- 
-  /* MOBILE */
-  @media only screen and (max-width: 736px) {
-    div.turtlebot-container4 {
-      flex-wrap: wrap;
-      padding: 20px 0px 0px 0px;
-      margin-bottom: 20px;
-    }
- 
-    div.turtlebot-sec4-box1 {
-      margin: 0px 0px 0px 0px;
-    }
- 
-    th.table-blank-square {
-      width: auto;
-    }
- 
-    h1.turtlebot-sec4-h1 {
-      font-size: 45px;
-      padding: 0px 0px 0px 0px;
-    }
- 
-    div.turtlebot-sec4-line {
-      margin: 5px 150px 15px 150px;
-    }
-  }
+     th.table-blank-square {
+         width: auto;
+     }
+
+     h1.turtlebot-sec3-h1 {
+         font-size: 45px;
+         padding: 0px 0px 0px 0px;
+     }
+
+     div.turtlebot-sec3-line {
+         margin: 5px 150px 15px 150px;
+     }
+ }
+
+ /* SECTION 4 */
+ div.turtlebot-container4 {
+     display: flex;
+     justify-content: center;
+     padding: 40px 0px 25px 0px;
+ }
+
+ div.turtlebot-sec4-box1 {
+     width: 100%;
+     max-width: 1200px;
+     margin: 0px 40px 0px 40px;
+ }
+
+ h1.turtlebot-sec4-h1 {
+     font-size: 62px;
+     text-align: center;
+     color: #1a272d;
+     margin: 0px 0px 0px 0px;
+ }
+
+ div.turtlebot-sec4-line {
+     height: 2px;
+     background: #1a272d;
+     margin: 15px 450px 30px 450px;
+ }
+
+ table.turtlebot-sec4-table {
+     font-family: arial, sans-serif;
+     border-collapse: collapse;
+     width: 100%;
+ }
+
+ th.table-blank-square {
+     width: 135px;
+ }
+
+ h1.turtlebot-sec4-models1,
+ h1.turtlebot-sec4-models2,
+ h1.turtlebot-sec4-models3,
+ h1.turtlebot-sec4-models4 {
+     font-size: 17px;
+     text-align: center;
+     color: #1a272d;
+ }
+
+ /* Responsive fix */
+ @media only screen and (max-width: 1176px) {
+     div.turtlebot-container4 {
+         flex-wrap: wrap;
+     }
+ }
+
+ /* TABLET */
+ @media only screen and (max-width: 1024px) {
+     div.turtlebot-container4 {
+         padding-bottom: 40px;
+         flex-flow: wrap;
+     }
+
+     div.turtlebot-sec4-box1 {
+         margin: 0px 40px 0px 40px;
+     }
+
+     h1.turtlebot-sec4-h1 {
+         font-size: 6vw;
+     }
+
+     div.turtlebot-sec4-line {
+         width: auto;
+         margin: 10px 300px 20px 300px;
+     }
+ }
+
+ /* MOBILE */
+ @media only screen and (max-width: 736px) {
+     div.turtlebot-container4 {
+         flex-wrap: wrap;
+         padding: 20px 0px 0px 0px;
+         margin-bottom: 20px;
+     }
+
+     div.turtlebot-sec4-box1 {
+         margin: 0px 0px 0px 0px;
+     }
+
+     th.table-blank-square {
+         width: auto;
+     }
+
+     h1.turtlebot-sec4-h1 {
+         font-size: 45px;
+         padding: 0px 0px 0px 0px;
+     }
+
+     div.turtlebot-sec4-line {
+         margin: 5px 150px 15px 150px;
+     }
+ }
 
  /* SECTION 10 */
  div.locobot-container10 {
