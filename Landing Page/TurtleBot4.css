@@ -45,7 +45,7 @@
  p.locobot-sec2-p {
      max-width: 670px;
      text-align: justify;
- } fbvdf
+ } 
 
  div.locobot-sec2-box2 {
      padding: 60px 120px 60px 50px;
@@ -153,66 +153,16 @@
      }
  }
 
-  /* SECTION 3 */
-  div.locobot-container9 {
-    display: flex;
-    justify-content: center;
-    padding: 40px 0px 25px 0px;
-}
-
-div.locobot-sec9-box1 {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0px 40px 0px 40px;
-}
-
-h1.locobot-sec9-h1 {
-    font-size: 62px;
-    text-align: center;
-    color: #1a272d;
-    margin: 0px 0px 0px 0px;
-}
-
-div.locobot-sec9-line {
-    height: 2px;
-    background: #1a272d;
-    margin: 15px 450px 30px 450px;
-}
-
-table.locobot-sec9-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-th.table-blank-square {
-    width: 135px;
-}
-
-h1.locobot-sec9-models1,
-h1.locobot-sec9-models2 {
-    font-size: 17px;
-    text-align: center;
-    color: #1a272d;
-}
-
-/*
-div.unitree-links-box {
-  display: flex;
-  flex-flow: column;
-  text-align: left;
-} */
-
-a.locobot-sec9-link-all {
+ /* BOTH CHARTS */
+a.turtlebot-sec3-link-all {
     margin-bottom: 5px;
 }
 
-td.center-align,
-th.center-align {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-    text-align: center;
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
 }
 
 /* Color of table */
@@ -220,38 +170,13 @@ tr:nth-child(even) {
     background-color: #dddddd;
 }
 
-/* Responsive fix */
-@media only screen and (max-width: 1176px) {
-    div.locobot-container9 {
-        flex-wrap: wrap;
-    }
-}
-
 /* TABLET */
 @media only screen and (max-width: 1024px) {
-    div.locobot-container9 {
-        padding-bottom: 40px;
-        flex-flow: wrap;
-    }
-
-    div.locobot-sec9-box1 {
-        margin: 0px 40px 0px 40px;
-    }
-
-    h1.locobot-sec9-h1 {
-        font-size: 6vw;
-    }
-
-    div.locobot-sec9-line {
-        width: auto;
-        margin: 10px 300px 20px 300px;
-    }
-
-    a.locobot-sec9-link-all {
+    a.turtlebot-sec3-link-all {
         font-size: 2vw;
     }
 
-    a.locobot-sec9-link2-all {
+    a.turtlebot-sec3-link2-all {
         font-size: 2vw;
     }
 
@@ -263,18 +188,13 @@ tr:nth-child(even) {
 
 /* MOBILE */
 @media only screen and (max-width: 736px) {
-    div.locobot-container9 {
-        flex-wrap: wrap;
-        padding: 20px 0px 0px 0px;
-        margin-bottom: 20px;
+    a.turtlebot-sec3-link-all {
+        font-size: 10px;
+        margin: 5px 0px 0px 0px;
     }
 
-    div.locobot-sec9-box1 {
-        margin: 0px 0px 0px 0px;
-    }
-
-    th.table-blank-square {
-        width: auto;
+    a.turtlebot-sec3-link2-all {
+        font-size: 10px;
     }
 
     td,
@@ -283,53 +203,149 @@ tr:nth-child(even) {
         padding: 5px;
         width: 100px;
     }
+}
 
-    h1.locobot-sec9-h1 {
+ /* SECTION 3 */
+div.turtlebot-container3 {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px 25px 0px;
+}
+
+div.turtlebot-sec3-box1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px 40px 0px 40px;
+}
+
+h1.turtlebot-sec3-h1 {
+    font-size: 62px;
+    text-align: center;
+    color: #1a272d;
+    margin: 0px 0px 0px 0px;
+}
+
+div.turtlebot-sec3-line {
+    height: 2px;
+    background: #1a272d;
+    margin: 15px 450px 30px 450px;
+}
+
+table.turtlebot-sec3-table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+img.tutlebot-logo {
+    width: 200px;
+}
+
+td.center-align,
+th.center-align {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+}
+
+th.center-align-dark {
+    background: #00b0f0;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+}
+
+th.center-align-light {
+    background: #e2f2fb;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Responsive fix */
+@media only screen and (max-width: 1176px) {
+    div.turtlebot-container3 {
+        flex-wrap: wrap;
+    }
+}
+
+/* TABLET */
+@media only screen and (max-width: 1024px) {
+    div.turtlebot-container3 {
+        padding-bottom: 40px;
+        flex-flow: wrap;
+    }
+
+    div.turtlebot-sec3-box1 {
+        margin: 0px 40px 0px 40px;
+    }
+
+    h1.turtlebot-sec3-h1 {
+        font-size: 6vw;
+    }
+
+    div.turtlebot-sec3-line {
+        width: auto;
+        margin: 10px 300px 20px 300px;
+    }
+}
+
+/* MOBILE */
+@media only screen and (max-width: 736px) {
+    div.turtlebot-container3 {
+        flex-wrap: wrap;
+        padding: 20px 0px 0px 0px;
+        margin-bottom: 20px;
+    }
+
+    div.turtlebot-sec3-box1 {
+        margin: 0px 0px 0px 0px;
+    }
+
+    th.table-blank-square {
+        width: auto;
+    }
+
+    h1.turtlebot-sec3-h1 {
         font-size: 45px;
         padding: 0px 0px 0px 0px;
     }
 
-    div.locobot-sec9-line {
+    div.turtlebot-sec3-line {
         margin: 5px 150px 15px 150px;
-    }
-
-    a.locobot-sec9-link-all {
-        font-size: 10px;
-        margin: 5px 0px 0px 0px;
-    }
-
-    a.locobot-sec9-link2-all {
-        font-size: 10px;
     }
 }
 
-/* SECTION 9 */
-div.locobot-container9 {
+/* SECTION 4 */
+div.turtlebot-container4 {
     display: flex;
     justify-content: center;
     padding: 40px 0px 25px 0px;
   }
  
-  div.locobot-sec9-box1 {
+  div.turtlebot-sec4-box1 {
     width: 100%;
     max-width: 1200px;
     margin: 0px 40px 0px 40px;
   }
  
-  h1.locobot-sec9-h1 {
+  h1.turtlebot-sec4-h1 {
     font-size: 62px;
     text-align: center;
     color: #1a272d;
     margin: 0px 0px 0px 0px;
   }
  
-  div.locobot-sec9-line {
+  div.turtlebot-sec4-line {
     height: 2px;
     background: #1a272d;
     margin: 15px 450px 30px 450px;
   }
  
-  table.locobot-sec9-table {
+  table.turtlebot-sec4-table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
@@ -339,88 +355,52 @@ div.locobot-container9 {
     width: 135px;
   }
  
-  h1.locobot-sec9-models1,
-  h1.locobot-sec9-models2,
-  h1.locobot-sec9-models3,
-  h1.locobot-sec9-models4 {
+  h1.turtlebot-sec4-models1,
+  h1.turtlebot-sec4-models2,
+  h1.turtlebot-sec4-models3,
+  h1.turtlebot-sec4-models4 {
     font-size: 17px;
     text-align: center;
     color: #1a272d;
   }
  
-  /*
- div.unitree-links-box {
-   display: flex;
-   flex-flow: column;
-   text-align: left;
- } */
- 
-  a.locobot-sec9-link-all {
-    margin-bottom: 5px;
-  }
- 
-  td,
-  th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-  }
- 
-  /* Color of table */
-  tr:nth-child(even) {
-    background-color: #dddddd;
-  }
- 
   /* Responsive fix */
   @media only screen and (max-width: 1176px) {
-    div.locobot-container9 {
+    div.turtlebot-container4 {
       flex-wrap: wrap;
     }
   }
  
   /* TABLET */
   @media only screen and (max-width: 1024px) {
-    div.locobot-container9 {
+    div.turtlebot-container4 {
       padding-bottom: 40px;
       flex-flow: wrap;
     }
  
-    div.locobot-sec9-box1 {
+    div.turtlebot-sec4-box1 {
       margin: 0px 40px 0px 40px;
     }
  
-    h1.locobot-sec9-h1 {
+    h1.turtlebot-sec4-h1 {
       font-size: 6vw;
     }
  
-    div.locobot-sec9-line {
+    div.turtlebot-sec4-line {
       width: auto;
       margin: 10px 300px 20px 300px;
-    }
- 
-    a.locobot-sec9-link-all {
-      font-size: 2vw;
-    }
- 
-    a.locobot-sec9-link2-all {
-      font-size: 2vw;
-    }
- 
-    td,
-    th {
-      font-size: 15px;
     }
   }
  
   /* MOBILE */
   @media only screen and (max-width: 736px) {
-    div.locobot-container9 {
+    div.turtlebot-container4 {
       flex-wrap: wrap;
       padding: 20px 0px 0px 0px;
       margin-bottom: 20px;
     }
  
-    div.locobot-sec9-box1 {
+    div.turtlebot-sec4-box1 {
       margin: 0px 0px 0px 0px;
     }
  
@@ -428,29 +408,13 @@ div.locobot-container9 {
       width: auto;
     }
  
-    td,
-    th {
-      font-size: 11px;
-      padding: 5px;
-      width: 100px;
-    }
- 
-    h1.locobot-sec9-h1 {
+    h1.turtlebot-sec4-h1 {
       font-size: 45px;
       padding: 0px 0px 0px 0px;
     }
  
-    div.locobot-sec9-line {
+    div.turtlebot-sec4-line {
       margin: 5px 150px 15px 150px;
-    }
- 
-    a.locobot-sec9-link-all {
-      font-size: 10px;
-      margin: 5px 0px 0px 0px;
-    }
- 
-    a.locobot-sec9-link2-all {
-      font-size: 10px;
     }
   }
 
