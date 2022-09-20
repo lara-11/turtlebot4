@@ -250,16 +250,21 @@ th.center-align {
 }
 
 th.center-align-dark {
-    background: #00b0f0;
-    border: 1px solid #dddddd;
+    color: white;
+    background: #00cfff;
+    border: 1px solid #00cfff;
+    border-top: 1.1px solid #00cfff;
+    border-left: 1.1px solid #00cfff;
     text-align: left;
     padding: 8px;
     text-align: center;
 }
 
 th.center-align-light {
-    background: #e2f2fb;
-    border: 1px solid #dddddd;
+    color: white;
+    background: #7be6ff;
+    border: 1px solid #7be6ff;
+    border-left: 1.1px solid #7be6ff;
     text-align: left;
     padding: 8px;
     text-align: center;
