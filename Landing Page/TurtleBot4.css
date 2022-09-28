@@ -159,6 +159,21 @@
     margin-bottom: 30px;
   }
 
+    /* Pan & Tilt */
+    /* img.turtlebot-sec3-noarm {
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    } */
+  
+    img.turtlebot-sec3-dynamixel {
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
   /* Arm Section */
   img.turtlebot-sec3-noarm {
       width: 222px;
