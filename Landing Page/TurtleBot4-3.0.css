@@ -22,11 +22,11 @@ div.point-five-container {
 }
 
 /* SECTION 2 */
-div.turtlebot-container2 {
+/* div.turtlebot-container2 {
     display: flex;
     justify-content: center;
     padding-bottom: 20px;
-}
+} */
 
 div.turtlebot-sec2-box1 {
     width: 100%;
@@ -47,11 +47,7 @@ div.turtlebot-sec2-line {
     margin: 15px 800px 10px 800px;
 }
 
-div.vs-comparison {
-    display: flex;
-}
-
-div.center-align-product {
+th.center-align-product {
     /* border: 1px solid #dddddd; */
     padding: 8px;
     text-align: center;
@@ -60,18 +56,18 @@ div.center-align-product {
 }
 
 /* Responsive fix */
-@media only screen and (max-width: 1176px) {
+/* @media only screen and (max-width: 1176px) {
     div.turtlebot-container2 {
         flex-wrap: wrap;
     }
-}
+} */
 
 /* TABLET */
 @media only screen and (max-width: 1024px) {
-    div.turtlebot-container2 {
+    /*div.turtlebot-container2 {
         padding-bottom: 40px;
         flex-flow: wrap;
-    }
+    } */
 
     div.turtlebot-sec2-box1 {
         margin: 0px 40px 0px 40px;
@@ -89,11 +85,11 @@ div.center-align-product {
 
 /* MOBILE */
 @media only screen and (max-width: 736px) {
-    div.turtlebot-container2 {
+    /* div.turtlebot-container2 {
         flex-wrap: wrap;
         padding: 20px 0px 0px 0px;
         margin-bottom: 20px;
-    }
+    } */
 
     div.turtlebot-sec2-box1 {
         margin: 0px 0px 0px 0px;
@@ -126,7 +122,7 @@ h1.create-title-h1 {
     margin: 30px 0px 30px 0px;
 }
 
-div.center-align-product-base {
+th.center-align-product-base {
     /* border: 1px solid #dddddd; */
     padding: 8px;
     text-align: center;
@@ -183,7 +179,6 @@ th.center-align {
     /* border: 1px solid #dddddd; */
     padding: 8px;
     text-align: center;
-    display: flex;
     flex-flow: column;
 }
 
