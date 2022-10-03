@@ -30,7 +30,7 @@ div.point-five-container {
 
 div.turtlebot-sec2-box1 {
     width: 100%;
-    max-width: 1250px;
+    max-width: 1300px;
     margin: 0px 40px 0px 40px;
 }
 
@@ -137,6 +137,23 @@ th.center-align-product-base {
     }
 }
 
+/* FLEX-ALL-SECTIONS */
+div.flex-all-left {
+    display: flex;
+    flex-flow: row-reverse;
+}
+
+div.flex-all-right {
+    display: flex;
+}
+
+div.vl {
+    border-left: 2px solid #1a272d;
+    height: 200px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
 /* SECTION 4 */
 div.turtlebot-container4 {
     display: flex;
@@ -146,7 +163,7 @@ div.turtlebot-container4 {
 
 div.turtlebot-sec4-box1 {
     width: 100%;
-    max-width: 1300px;
+    max-width: 1350px;
     margin: 0px 40px 0px 40px;
 }
 
@@ -177,7 +194,7 @@ img.locobot-logo {
 td.center-align,
 th.center-align {
     /* border: 1px solid #dddddd; */
-    padding: 8px;
+    padding: 20px;
     text-align: center;
     flex-flow: column;
 }
@@ -213,7 +230,7 @@ b {
 }
 
 img.turtlebot-sec4-same {
-    width: 300px;
+    width: 365px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -233,79 +250,73 @@ p.create-3 {
 
 /* Computer */
 img.turtlebot-sec4-4gb {
-    width: 250px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
+    width: 215px;
+    height: fit-content;
+    margin: auto;
 }
 
 img.turtlebot-sec4-8gb {
-    width: 280px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 7px;
+    width: 215px;
+    height: fit-content;
+    margin: auto;
 }
 
 /* LiDAR */
 img.turtlebot-sec4-a1m8 {
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
+    width: 215px;
+    height: fit-content;
+    margin: auto;
 }
 
 img.turtlebot-sec4-a2m8 {
-    width: 260px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
+    width: 215px;
+    height: fit-content;
+    margin: auto;
 }
 
-/* Pan & Tilt */
+/* Camera */
 img.turtlebot-sec4-oakd {
-    width: 250px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 43px;
+    width: 215px;
+    height: fit-content;
+    margin: auto;
 }
 
 img.turtlebot-sec4-dynamixel {
-    width: 250px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
+    width: 215px;
+    height: fit-content;
+    margin: auto;
 }
 
 /* Arm Section */
 img.turtlebot-sec4-noarm {
-    width: 222px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
+    width: 350px;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 img.turtlebot-sec4-arm {
     width: 150px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 33px;
+    margin-right: 33px;
 }
 
 /* ROS - ROS2 */
 img.turtlebot-sec4-ros {
-    width: 250px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 95px;
+    width: 215px;
+    height: fit-content;
+    margin: auto;
 }
 
 img.turtlebot-sec4-ros2 {
-    width: 250px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
+    width: 215px;
+    height: fit-content;
+    margin: auto;
 }
 
 /* Responsive fix */
@@ -483,10 +494,10 @@ iframe.locobot-sec5-video {
 }
 
 /* BOTH CHARTS */
-a.turtlebot-sec-link-all {
+/* a.turtlebot-sec-link-all {
     margin-top: 5px;
     margin-bottom: 5px;
-}
+} */
 
 a.turtlebot-sec-link2-all {
     margin-top: 5px;
@@ -507,9 +518,9 @@ tr:nth-child(even) {
 
 /* TABLET */
 @media only screen and (max-width: 1024px) {
-    a.turtlebot-sec-link-all {
+    /* a.turtlebot-sec-link-all {
         font-size: 2vw;
-    }
+    } */
 
     a.turtlebot-sec-link2-all {
         font-size: 2vw;
@@ -523,10 +534,10 @@ tr:nth-child(even) {
 
 /* MOBILE */
 @media only screen and (max-width: 736px) {
-    a.turtlebot-sec-link-all {
+    /* a.turtlebot-sec-link-all {
         font-size: 10px;
         margin: 5px 0px 0px 0px;
-    }
+    } */
 
     a.turtlebot-sec-link2-all {
         font-size: 10px;
@@ -639,7 +650,7 @@ h1.turtlebot-sec6-models4 {
     }
 }
 
-/* SECTION 10 */
+/* SECTION 7 */
 div.locobot-container10 {
     display: flex;
     margin-top: 40px;
