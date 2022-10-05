@@ -163,6 +163,7 @@ iframe.locobot-sec2-video {
 div.turtlebot-container3 {
     padding: 30px 0px 30px 0px;
     background: #e2f2fb;
+    margin-bottom: 10px;
 }
 
 div.turtlebot-sec3-box1 {
@@ -184,11 +185,19 @@ div.turtlebot-sec3-line {
     margin: 15px 800px 10px 800px;
 }
 
-th.center-align-product {
+div.vs-comparison {
+    display: flex;
+    max-width: 1400px;
+    margin: auto;
+}
+
+figure.center-align-product {
     /* border: 1px solid #dddddd; */
     padding: 10px;
     text-align: center;
     margin: auto;
+    display: flex;
+    flex-flow: column;
 }
 
 /* Responsive fix */
@@ -327,7 +336,7 @@ img.turtlebot-img {
 
 img.turtlebot-logo {
     width: 200px;
-    margin: 5px 0px 10px 0px;
+    margin: auto;
 }
 
 img.vs-img {
@@ -340,7 +349,7 @@ img.locobot-img {
 
 img.locobot-logo {
     width: 200px;
-    margin: 15px 0px 10px 0px;
+    margin: auto;
 }
 
 td.center-align {
@@ -439,8 +448,8 @@ img.turtlebot-sec4-noarm {
     height: fit-content;
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 8px;
-    margin-right: 8px;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 img.turtlebot-sec4-arm {
@@ -448,8 +457,8 @@ img.turtlebot-sec4-arm {
     height: fit-content;
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 33px;
-    margin-right: 33px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 /* ROS - ROS2 */
@@ -624,9 +633,17 @@ th {
     padding: 8px;
 }
 
-/* Color of table */
+/* Color of tables */
 tr:nth-child(even) {
     background-color: #dddddd;
+}
+
+tr.first:nth-child(odd) {
+    background-color: #dddddd;
+}
+
+tr.first:nth-child(even) {
+    background-color: white;
 }
 
 /* TABLET */
