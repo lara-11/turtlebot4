@@ -186,10 +186,9 @@ div.turtlebot-sec3-line {
 
 th.center-align-product {
     /* border: 1px solid #dddddd; */
-    padding: 8px;
+    padding: 10px;
     text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto;
 }
 
 /* Responsive fix */
@@ -287,6 +286,8 @@ div.flex-all-right {
 div.vl {
     border-left: 2px solid #1a272d;
     height: 200px;
+    margin-top: auto;
+    margin-bottom: auto;
     margin-left: 15px;
     margin-right: 15px;
 }
@@ -300,7 +301,7 @@ div.turtlebot-container4 {
 
 div.turtlebot-sec4-box1 {
     width: 100%;
-    max-width: 1350px;
+    max-width: 1400px;
     margin: 0px 40px 0px 40px;
 }
 
@@ -309,6 +310,7 @@ b.all-titles {
 }
 
 p.all-p {
+    max-width: 265px;
     margin: 0px 15px 15px 15px;
 }
 
@@ -318,9 +320,22 @@ table.turtlebot-sec4-table {
     width: 100%;
 }
 
+/* VS Images */
+img.turtlebot-img {
+    width: 575px;
+}
+
 img.turtlebot-logo {
     width: 200px;
     margin: 5px 0px 10px 0px;
+}
+
+img.vs-img {
+    width: 190px;
+}
+
+img.locobot-img {
+    width: 575px;
 }
 
 img.locobot-logo {
@@ -328,9 +343,9 @@ img.locobot-logo {
     margin: 15px 0px 10px 0px;
 }
 
-td.center-align,
-th.center-align {
+td.center-align {
     /* border: 1px solid #dddddd; */
+    width: 615px;
     padding: 20px;
     text-align: center;
     flex-flow: column;
@@ -342,11 +357,8 @@ th.center-align-dark {
     /* border: 1px solid #00cfff; */
     /* border-top: 1.1px solid #00cfff; */
     /* border-left: 1.1px solid #00cfff; */
-    padding: 8px;
     text-align: center;
     font-size: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
 }
 
 th.center-align-light {
@@ -354,11 +366,8 @@ th.center-align-light {
     background: #7be6ff;
     /* border: 1px solid #7be6ff; */
     /* border-left: 1.1px solid #7be6ff; */
-    padding: 8px;
     text-align: center;
     font-size: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
 }
 
 b {
@@ -426,7 +435,7 @@ img.turtlebot-sec4-dynamixel {
 
 /* Arm Section */
 img.turtlebot-sec4-noarm {
-    width: 350px;
+    width: 215px;
     height: fit-content;
     margin-top: auto;
     margin-bottom: auto;
@@ -498,104 +507,104 @@ div.dobot-flex-container4 {
     justify-content: center;
     background: #e2f2fb;
     margin-bottom: 10px;
-  }
+}
 
-  div.dobot-cr-box1 {
+div.dobot-cr-box1 {
     padding: 60px 50px 60px 120px;
-  }
+}
 
-  iframe.dobot-cr-video {
+iframe.dobot-cr-video {
     width: 700px;
     height: 380px;
     max-width: 100%;
-  }
+}
 
-  div.dobot-cr-box2 {
+div.dobot-cr-box2 {
     padding: 100px 120px 60px 50px;
-  }
+}
 
-  h1.dobot-cr-h1 {
+h1.dobot-cr-h1 {
     max-width: 670px;
     text-align: left;
     font-size: 48px;
     color: #1a272d;
     margin-top: 0px;
-  }
+}
 
-  div.dobot-cr-line {
+div.dobot-cr-line {
     height: 2px;
     background: #1a272d;
     margin: 10px 290px 15px 0px;
-  }
+}
 
-  p.dobot-cr-p {
+p.dobot-cr-p {
     max-width: 670px;
     text-align: justify;
-  }
+}
 
-  /* TABLET */
-  @media only screen and (max-width: 1024px) {
+/* TABLET */
+@media only screen and (max-width: 1024px) {
     div.dobot-flex-container4 {
-      flex-flow: wrap-reverse;
+        flex-flow: wrap-reverse;
     }
 
     div.dobot-cr-box1 {
-      padding: 20px 100px 40px 100px;
+        padding: 20px 100px 40px 100px;
     }
 
     iframe.dobot-cr-video {
-      width: 650px;
-      height: 340px;
+        width: 650px;
+        height: 340px;
     }
 
     div.dobot-cr-box2 {
-      padding: 40px 100px 20px 100px;
+        padding: 40px 100px 20px 100px;
     }
 
     h1.dobot-cr-h1 {
-      text-align: left;
-      max-width: 100%;
+        text-align: left;
+        max-width: 100%;
     }
 
     div.dobot-cr-line {
-      margin: 10px 400px 15px 0px;
+        margin: 10px 400px 15px 0px;
     }
 
     p.dobot-cr-p {
-      font-size: 15px;
-      max-width: 100%;
-      margin-bottom: 0px;
+        font-size: 15px;
+        max-width: 100%;
+        margin-bottom: 0px;
     }
-  }
+}
 
-  /* MOBILE */
-  @media only screen and (max-width: 736px) {
+/* MOBILE */
+@media only screen and (max-width: 736px) {
     div.dobot-cr-box1 {
-      padding: 0px 30px 40px 30px;
+        padding: 0px 30px 40px 30px;
     }
 
     iframe.dobot-cr-video {
-      width: 420px;
-      height: 220px;
+        width: 420px;
+        height: 220px;
     }
 
     div.dobot-cr-box2 {
-      padding: 30px 30px 20px 30px;
+        padding: 30px 30px 20px 30px;
     }
 
     h1.dobot-cr-h1 {
-      font-size: 45px;
-      text-align: left;
+        font-size: 45px;
+        text-align: left;
     }
 
     div.dobot-cr-line {
-      margin: 10px 200px 15px 0px;
+        margin: 10px 200px 15px 0px;
     }
 
     p.dobot-cr-p {
-      font-size: 14px;
+        font-size: 14px;
     }
-  }
+}
 
 /* BOTH CHARTS */
 /* a.turtlebot-sec-link-all {
