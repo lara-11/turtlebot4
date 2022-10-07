@@ -15,23 +15,23 @@ figure.locobot-video2 {
     }
 }
 
-/*SECTION 2 */
-div.turtlebot-container2 {
+/* SECTION 2 */
+div.locobot-container2 {
     display: flex;
     justify-content: center;
-    background-color: #ededed;
+    background: #ededed;
     margin-bottom: 10px;
 }
 
 div.locobot-sec2-box1 {
     width: 951.3px;
-    padding: 90px 50px 80px 120px;
+    padding: 115px 50px 100px 120px;
 }
 
 h1.locobot-sec2-h1 {
     max-width: 670px;
     text-align: left;
-    font-size: 48px;
+    font-size: 57px;
     color: #1a272d;
     margin-top: 0px;
 }
@@ -48,7 +48,7 @@ p.locobot-sec2-p {
 }
 
 div.locobot-sec2-box2 {
-    padding: 50px 120px 50px 50px;
+    padding: 60px 120px 60px 50px;
 }
 
 iframe.locobot-sec2-video {
@@ -59,7 +59,7 @@ iframe.locobot-sec2-video {
 
 /* RESPONSIVE */
 @media only screen and (max-width: 1250px) {
-    div.locobot-container5 {
+    div.locobot-container2 {
         flex-flow: wrap;
         padding: 40px 80px 20px 80px;
     }
@@ -83,7 +83,7 @@ iframe.locobot-sec2-video {
 
 /* TABLET */
 @media only screen and (max-width: 1024px) {
-    div.locobot-container5 {
+    div.locobot-container2 {
         flex-flow: wrap;
         padding: 40px 0px 20px 0px;
     }
@@ -120,7 +120,7 @@ iframe.locobot-sec2-video {
 
 /* MOBILE */
 @media only screen and (max-width: 736px) {
-    div.locobot-container5 {
+    div.locobot-container2 {
         padding-top: 0px;
     }
 
@@ -133,7 +133,7 @@ iframe.locobot-sec2-video {
     }
 
     h1.locobot-sec2-h1 {
-        font-size: 8.8vw;
+        font-size: 30px;
         text-align: left;
         margin: 0px 30px 10px 30px;
     }
@@ -413,7 +413,7 @@ th.center-align-dark {
 div.turtlebot-container4 {
     display: flex;
     justify-content: center;
-    padding: 0px 0px 60px 0px;
+    padding: 0px 0px 10px 0px;
 }
 
 div.turtlebot-sec4-box1 {
@@ -507,47 +507,98 @@ label#lidar-right-img {
     margin: auto;
 }
 
+/* Fourth Section 4 */
 /* Camera */
-img.turtlebot-sec4-oakd {
-    width: 215px;
+div.fourth-left-fit-auto {
     height: fit-content;
     margin: auto;
 }
 
-img.turtlebot-sec4-dynamixel {
-    width: 215px;
+div.fourth-right-fit-auto {
     height: fit-content;
     margin: auto;
 }
 
+input#show5 {
+    display: none;
+}
+
+input#show6 {
+    display: none;
+}
+
+label#camera-left-img {
+    max-width: 215px;
+    height: fit-content;
+    margin: auto;
+}
+
+label#camera-right-img {
+    max-width: 215px;
+    height: fit-content;
+    margin: auto;
+}
+
+/* Fifth Section 4 */
 /* Arm Section */
-img.turtlebot-sec4-noarm {
-    width: 215px;
-    height: fit-content;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 16px;
-    margin-right: 16px;
-}
-
-img.turtlebot-sec4-arm {
-    width: 150px;
-    height: fit-content;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-/* ROS - ROS2 */
-img.turtlebot-sec4-ros {
-    width: 215px;
+div.fifth-left-fit-auto {
     height: fit-content;
     margin: auto;
 }
 
-img.turtlebot-sec4-ros2 {
-    width: 215px;
+div.fifth-right-fit-auto {
+    height: fit-content;
+    margin: auto;
+}
+
+input#show7 {
+    display: none;
+}
+
+input#show8 {
+    display: none;
+}
+
+label#arm-left-img {
+    max-width: 215px;
+    height: fit-content;
+    margin: auto;
+}
+
+label#arm-right-img {
+    max-width: 160px;
+    height: fit-content;
+    margin: auto;
+}
+
+/* Sixth Section 4 */
+/* ROS - ROS2 */
+div.sixth-left-fit-auto {
+    height: fit-content;
+    margin: auto;
+}
+
+div.sixth-right-fit-auto {
+    height: fit-content;
+    margin: auto;
+}
+
+input#show9 {
+    display: none;
+}
+
+input#show10 {
+    display: none;
+}
+
+label#ros-left-img {
+    max-width: 215px;
+    height: fit-content;
+    margin: auto;
+}
+
+label#ros-right-img {
+    max-width: 160px;
     height: fit-content;
     margin: auto;
 }
@@ -595,7 +646,6 @@ input#show {
 @media only screen and (max-width: 736px) {
     div.turtlebot-container4 {
         flex-wrap: wrap;
-        padding: 20px 0px 0px 0px;
         margin-bottom: 20px;
     }
 
@@ -703,6 +753,108 @@ input#show {
     #show4:checked~#more4 {
         display: none;
     }
+
+    /* Fourth Section 4 */
+    /* Camera */
+    /* This will Hide the Image by default */
+    #show5,
+    #content5 {
+        display: none;
+    }
+
+    /* When section is clicked / IMAGE will appear */
+    #show5:checked~#content5 {
+        display: block;
+    }
+
+    /* When section is clicked / TEXT will disappear */
+    #show5:checked~#more5 {
+        display: none;
+    }
+
+    /* This will Hide the Image by default */
+    #show6,
+    #content6 {
+        display: none;
+    }
+
+    /* When section is clicked / IMAGE will appear */
+    #show6:checked~#content6 {
+        display: block;
+    }
+
+    /* When section is clicked / TEXT will disappear */
+    #show6:checked~#more6 {
+        display: none;
+    }
+
+    /* Fifth Section 4 */
+    /* Arm Section */
+    /* This will Hide the Image by default */
+    #show7,
+    #content7 {
+        display: none;
+    }
+
+    /* When section is clicked / IMAGE will appear */
+    #show7:checked~#content7 {
+        display: block;
+    }
+
+    /* When section is clicked / TEXT will disappear */
+    #show7:checked~#more7 {
+        display: none;
+    }
+
+    /* This will Hide the Image by default */
+    #show8,
+    #content8 {
+        display: none;
+    }
+
+    /* When section is clicked / IMAGE will appear */
+    #show8:checked~#content8 {
+        display: block;
+    }
+
+    /* When section is clicked / TEXT will disappear */
+    #show8:checked~#more8 {
+        display: none;
+    }
+
+    /* Sixth Section 4 */
+    /* ROS - ROS2 */
+    /* This will Hide the Image by default */
+    #show9,
+    #content9 {
+        display: none;
+    }
+
+    /* When section is clicked / IMAGE will appear */
+    #show9:checked~#content9 {
+        display: block;
+    }
+
+    /* When section is clicked / TEXT will disappear */
+    #show9:checked~#more9 {
+        display: none;
+    }
+
+    /* This will Hide the Image by default */
+    #show10,
+    #content10 {
+        display: none;
+    }
+
+    /* When section is clicked / IMAGE will appear */
+    #show10:checked~#content10 {
+        display: block;
+    }
+
+    /* When section is clicked / TEXT will disappear */
+    #show10:checked~#more10 {
+        display: none;
+    }
 }
 
 /* SECTION 5 */
@@ -797,7 +949,7 @@ p.dobot-cr-p {
     }
 
     h1.dobot-cr-h1 {
-        font-size: 45px;
+        font-size: 30px;
         text-align: left;
     }
 
