@@ -18,15 +18,8 @@
             <div class="locobot-sec2-line"></div>
 
             <p class="locobot-sec2-p">
-                The LoCoBot is a ROS research rover for mapping, navigation & manipulation (optional) that enables
-                researchers,
-                educators & students alike to focus on high level code development instead of hardware & building out
-                lower
-                level code. Development on the LoCoBot is simplified with open source software, full ROS-mapping &
-                navigation
-                packages & modular open source Python API that allows users to move the platform as well as manipulate
-                in as few
-                as 10 lines of code.
+                Matt and Rick explain the history of the development of the Turtlebot while going over a few of the key
+                advantages the LoCoBot has over the Turtlebot 2i.
             </p>
         </div>
 
@@ -47,7 +40,8 @@
 
         <div class="vs-comparison">
             <figure class="center-align-product">
-                <img src="/Shared/TurtleBot 4/turtlebot4-comparison.png" class="turtlebot-img" data-image="0">
+                <img src="/Shared/TurtleBot 4/turtlebot4-comparisontransparent.png" class="turtlebot-img"
+                    data-image="0">
                 <img src="/Shared/TurtleBot 4/asset-1-1.png" class="turtlebot-logo" data-image="0">
             </figure>
 
@@ -56,7 +50,7 @@
             </figure>
 
             <figure class="center-align-product">
-                <img src="/Shared/TurtleBot 4/locobot-comparison.png" class="locobot-img" data-image="0">
+                <img src="/Shared/TurtleBot 4/locobot-comparisontransparent.png" class="locobot-img" data-image="0">
                 <img src="/Shared/LoCoBot/locobot-logo.png" class="locobot-logo" data-image="0">
             </figure>
         </div>
@@ -87,14 +81,16 @@
                 <tr class="first">
                     <td class="center-align">
                         <div class="flex-all-left">
-                            <img src="/Shared/TurtleBot 4/rpi4-b-4gb.jpg" class="turtlebot-sec4-4gb" data-image="0">
+                            <img src="/Shared/TurtleBot 4/rpi4-b-4gbtransparent.png" class="turtlebot-sec4-4gb"
+                                data-image="0">
 
                             <div class="vl"></div>
 
                             <div>
                                 <b class="all-titles">RPI4 B (4GB)</b>
                                 <p class="all-p">
-                                    This product’s key features include a high-performance 64-bit quad-core processor,
+                                    This product’s key features include a high-performance 64-bit quad-core
+                                    processor,
                                     dual-display support at resolutions up to 4K via a pair of micro-HDMI ports and
                                     more.
                                 </p>
@@ -106,23 +102,31 @@
 
                     <td class="center-align">
                         <div class="flex-all-right">
-                            <img src="/Shared/TurtleBot 4/core-i3-8gb.png" class="turtlebot-sec4-8gb" data-image="0">
+
+                            <input id="show" type=checkbox>
+                            <div id="content">
+                                <label for="show" id="com-right-img">
+                                    <img src="/Shared/TurtleBot 4/core-i3-8gb.png" class="turtlebot-sec4-8gb"
+                                        data-image="0">
+                                </label>
+                            </div>
 
                             <div class="vl"></div>
 
-                            <div>
+                            <label for="show" id="more">
                                 <b class="all-titles">Core i3 (or better) 8GB</b>
                                 <p class="all-p">
-                                    Versatile 8th Gen Intel Dual-Core i3 computer with immersive media experience and
+                                    Versatile 8th Gen Intel Dual-Core i3 computer with immersive media experience
+                                    and
                                     responsive
                                     interaction. Consumes power relative to a full-sized PC.
                                 </p>
-                            </div>
+                            </label>
                         </div>
                     </td>
                 </tr>
 
-                <tr class="first">
+                <!--<tr class="first">
                     <td class="center-align">
                         <div class="flex-all-left">
                             <img src="/Shared/TurtleBot 4/turtlebot_lidar.png" class="turtlebot-sec4-a1m8"
@@ -277,7 +281,7 @@
                             </div>
                         </div>
                     </td>
-                </tr>
+                </tr>-->
             </table>
         </div>
     </div>
@@ -298,11 +302,8 @@
             <div class="dobot-cr-line"></div>
 
             <p class="dobot-cr-p">
-                Collaborative robots provide a cost-effective, flexible, and safe
-                automation solution for a wide range of production tasks and are
-                intended to be far simpler to deploy than traditional robotics. Simple,
-                easy to use drag and drop interface allows for building of complex
-                movements without previous coding experience.
+                Matt and Rick detail the entire LoCoBot line. Then, Luke joins in to explain what we are doing to
+                maintain and update the LoCoBot software-wise.
             </p>
         </div>
     </div>
@@ -540,968 +541,1008 @@
 
 
 <style>
-    /* LOCOBOT LANDING PAGE */
-    /* SECTION 1 */
-    figure.locobot-video2 {
+/* LOCOBOT LANDING PAGE */
+/* SECTION 1 */
+figure.locobot-video2 {
+    display: none;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 736px) {
+    figure.locobot-video1 {
         display: none;
     }
 
-    /* MOBILE */
-    @media only screen and (max-width: 736px) {
-        figure.locobot-video1 {
-            display: none;
-        }
-
-        figure.locobot-video2 {
-            display: block;
-        }
+    figure.locobot-video2 {
+        display: block;
     }
+}
 
-    /*SECTION 2 */
-    div.turtlebot-container2 {
-        display: flex;
-        justify-content: center;
-        background-color: #ededed;
-        margin-bottom: 10px;
+/*SECTION 2 */
+div.turtlebot-container2 {
+    display: flex;
+    justify-content: center;
+    background-color: #ededed;
+    margin-bottom: 10px;
+}
+
+div.locobot-sec2-box1 {
+    width: 951.3px;
+    padding: 90px 50px 80px 120px;
+}
+
+h1.locobot-sec2-h1 {
+    max-width: 670px;
+    text-align: left;
+    font-size: 48px;
+    color: #1a272d;
+    margin-top: 0px;
+}
+
+div.locobot-sec2-line {
+    height: 2px;
+    background: #1a272d;
+    margin: 10px 290px 15px 0px;
+}
+
+p.locobot-sec2-p {
+    max-width: 670px;
+    text-align: justify;
+}
+
+div.locobot-sec2-box2 {
+    padding: 50px 120px 50px 50px;
+}
+
+iframe.locobot-sec2-video {
+    width: 700px;
+    height: 380px;
+    max-width: 100%;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 1250px) {
+    div.locobot-container5 {
+        flex-flow: wrap;
+        padding: 40px 80px 20px 80px;
     }
 
     div.locobot-sec2-box1 {
-        width: 951.3px;
-        padding: 90px 50px 80px 120px;
+        padding: 40px 80px 20px 80px;
     }
 
     h1.locobot-sec2-h1 {
-        max-width: 670px;
-        text-align: left;
-        font-size: 48px;
-        color: #1a272d;
-        margin-top: 0px;
-    }
-
-    div.locobot-sec2-line {
-        height: 2px;
-        background: #1a272d;
-        margin: 10px 290px 15px 0px;
-    }
-
-    p.locobot-sec2-p {
-        max-width: 670px;
-        text-align: justify;
-    }
-
-    div.locobot-sec2-box2 {
-        padding: 50px 120px 50px 50px;
-    }
-
-    iframe.locobot-sec2-video {
-        width: 700px;
-        height: 380px;
         max-width: 100%;
     }
 
-    /* RESPONSIVE */
-    @media only screen and (max-width: 1250px) {
-        div.locobot-container5 {
-            flex-flow: wrap;
-            padding: 40px 80px 20px 80px;
-        }
-
-        div.locobot-sec2-box1 {
-            padding: 40px 80px 20px 80px;
-        }
-
-        h1.locobot-sec2-h1 {
-            max-width: 100%;
-        }
-
-        p.locobot-sec2-p {
-            max-width: 100%;
-        }
-
-        div.locobot-sec2-box2 {
-            padding: 20px 50px 60px 50px;
-        }
+    p.locobot-sec2-p {
+        max-width: 100%;
     }
 
-    /* TABLET */
-    @media only screen and (max-width: 1024px) {
-        div.locobot-container5 {
-            flex-flow: wrap;
-            padding: 40px 0px 20px 0px;
-        }
+    div.locobot-sec2-box2 {
+        padding: 20px 50px 60px 50px;
+    }
+}
 
-        div.locobot-sec2-box1 {
-            padding: 40px 0px 20px 0px;
-        }
-
-        div.locobot-sec2-box2 {
-            padding: 20px 100px 40px 100px;
-        }
-
-        h1.locobot-sec2-h1 {
-            text-align: left;
-            max-width: 100%;
-            margin: 0px 100px 5px 100px;
-        }
-
-        div.locobot-sec2-line {
-            margin: 10px 400px 15px 100px;
-        }
-
-        p.locobot-sec2-p {
-            font-size: 15px;
-            max-width: 100%;
-            margin: 0px 100px 0px 100px;
-        }
-
-        iframe.locobot-sec2-video {
-            width: 650px;
-            height: 340px;
-        }
+/* TABLET */
+@media only screen and (max-width: 1024px) {
+    div.locobot-container5 {
+        flex-flow: wrap;
+        padding: 40px 0px 20px 0px;
     }
 
-    /* MOBILE */
-    @media only screen and (max-width: 736px) {
-        div.locobot-container5 {
-            padding-top: 0px;
-        }
-
-        div.locobot-sec2-box1 {
-            padding: 30px 0px 20px 0px;
-        }
-
-        div.locobot-sec2-box2 {
-            padding: 0px 30px 40px 30px;
-        }
-
-        h1.locobot-sec2-h1 {
-            font-size: 8.8vw;
-            text-align: left;
-            margin: 0px 30px 10px 30px;
-        }
-
-        div.locobot-sec2-line {
-            margin: 10px 200px 15px 30px;
-        }
-
-        p.locobot-sec2-p {
-            font-size: 14px;
-            margin: 0px 30px 0px 30px;
-        }
-
-        iframe.locobot-sec2-video {
-            width: 420px;
-            height: 220px;
-        }
+    div.locobot-sec2-box1 {
+        padding: 40px 0px 20px 0px;
     }
 
-    /* SECTION 3 */
-    /* div.turtlebot-container2 {
+    div.locobot-sec2-box2 {
+        padding: 20px 100px 40px 100px;
+    }
+
+    h1.locobot-sec2-h1 {
+        text-align: left;
+        max-width: 100%;
+        margin: 0px 100px 5px 100px;
+    }
+
+    div.locobot-sec2-line {
+        margin: 10px 400px 15px 100px;
+    }
+
+    p.locobot-sec2-p {
+        font-size: 15px;
+        max-width: 100%;
+        margin: 0px 100px 0px 100px;
+    }
+
+    iframe.locobot-sec2-video {
+        width: 650px;
+        height: 340px;
+    }
+}
+
+/* MOBILE */
+@media only screen and (max-width: 736px) {
+    div.locobot-container5 {
+        padding-top: 0px;
+    }
+
+    div.locobot-sec2-box1 {
+        padding: 30px 0px 20px 0px;
+    }
+
+    div.locobot-sec2-box2 {
+        padding: 0px 30px 40px 30px;
+    }
+
+    h1.locobot-sec2-h1 {
+        font-size: 8.8vw;
+        text-align: left;
+        margin: 0px 30px 10px 30px;
+    }
+
+    div.locobot-sec2-line {
+        margin: 10px 200px 15px 30px;
+    }
+
+    p.locobot-sec2-p {
+        font-size: 14px;
+        margin: 0px 30px 0px 30px;
+    }
+
+    iframe.locobot-sec2-video {
+        width: 420px;
+        height: 220px;
+    }
+}
+
+/* SECTION 3 */
+div.turtlebot-container3 {
+    padding: 30px 0px 20px 0px;
+    background: #e2f2fb;
+    margin-bottom: 10px;
+}
+
+h1.turtlebot-sec3-h1 {
+    font-size: 62px;
+    text-align: center;
+    color: #1a272d;
+    margin: 0px 0px 0px 0px;
+}
+
+div.turtlebot-sec3-line {
+    height: 2px;
+    background: #1a272d;
+    margin: 15px 800px 0px 800px;
+}
+
+div.vs-comparison {
     display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
-} */
+    max-width: 1400px;
+    margin: auto;
+}
 
+figure.center-align-product {
+    /* border: 1px solid #dddddd; */
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+}
+
+/* VS Images */
+img.turtlebot-img {
+    width: 575px;
+}
+
+img.turtlebot-logo {
+    width: 200px;
+    margin: auto;
+}
+
+img.vs-img {
+    width: 190px;
+}
+
+img.locobot-img {
+    width: 575px;
+}
+
+img.locobot-logo {
+    width: 200px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+/* Responsive fix */
+@media only screen and (max-width: 1700px) {
+    div.turtlebot-sec3-line {
+        margin: 10px 650px 0px 650px;
+    }
+}
+
+/* Responsive fix */
+@media only screen and (max-width: 1400px) {
+    div.turtlebot-sec3-line {
+        margin: 10px 500px 0px 500px;
+    }
+}
+
+/* Responsive fix */
+@media only screen and (max-width: 1176px) {
     div.turtlebot-container3 {
-        padding: 30px 0px 30px 0px;
-        background: #e2f2fb;
-        margin-bottom: 10px;
+        flex-wrap: wrap;
     }
+}
 
-    div.turtlebot-sec3-box1 {
-        width: 100%;
-        max-width: 1300px;
-        margin: 0px 40px 0px 40px;
-    }
-
+/* TABLET */
+@media only screen and (max-width: 1024px) {
     h1.turtlebot-sec3-h1 {
-        font-size: 62px;
-        text-align: center;
-        color: #1a272d;
-        margin: 0px 0px 0px 0px;
+        font-size: 6vw;
     }
 
     div.turtlebot-sec3-line {
-        height: 2px;
-        background: #1a272d;
-        margin: 15px 800px 10px 800px;
-    }
-
-    div.vs-comparison {
-        display: flex;
-        max-width: 1400px;
-        margin: auto;
-    }
-
-    figure.center-align-product {
-        /* border: 1px solid #dddddd; */
-        padding: 10px;
-        text-align: center;
-        margin: auto;
-        display: flex;
-        flex-flow: column;
-    }
-
-    /* Responsive fix */
-    /* @media only screen and (max-width: 1176px) {
-    div.turtlebot-container2 {
-        flex-wrap: wrap;
-    }
-} */
-
-    /* TABLET */
-    @media only screen and (max-width: 1024px) {
-        /*div.turtlebot-container2 {
-        padding-bottom: 40px;
-        flex-flow: wrap;
-    } */
-
-        div.turtlebot-sec3-box1 {
-            margin: 0px 40px 0px 40px;
-        }
-
-        h1.turtlebot-sec3-h1 {
-            font-size: 6vw;
-        }
-
-        div.turtlebot-sec3-line {
-            width: auto;
-            margin: 10px 300px 20px 300px;
-        }
-    }
-
-    /* MOBILE */
-    @media only screen and (max-width: 736px) {
-        /* div.turtlebot-container2 {
-        flex-wrap: wrap;
-        padding: 20px 0px 0px 0px;
-        margin-bottom: 20px;
-    } */
-
-        div.turtlebot-sec3-box1 {
-            margin: 0px 0px 0px 0px;
-        }
-
-        h1.turtlebot-sec3-h1 {
-            font-size: 45px;
-            padding: 0px 0px 0px 0px;
-        }
-
-        div.turtlebot-sec3-line {
-            margin: 5px 150px 15px 150px;
-        }
-    }
-
-    /* SECTION 3 */
-    /* div.turtlebot-container3 {
-    display: flex;
-    justify-content: center;
-    background-color: #dddddd;
-} */
-
-    /* div.turtlebot-sec3-box1 {
-    width: 100%;
-    max-width: 1250px;
-    margin: 0px 40px 0px 40px;
-} */
-
-    h1.create-title-h1 {
-        margin: 30px 0px 30px 0px;
-    }
-
-    th.center-align-product-base {
-        /* border: 1px solid #dddddd; */
-        padding: 8px;
-        text-align: center;
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-
-    /* Responsive fix */
-    @media only screen and (max-width: 1176px) {
-        div.turtlebot-container3 {
-            flex-wrap: wrap;
-        }
-    }
-
-    /* FLEX-ALL-SECTIONS */
-    div.flex-all-left {
-        display: flex;
-        flex-flow: row-reverse;
-    }
-
-    div.flex-all-right {
-        display: flex;
-    }
-
-    div.vl {
-        border-left: 2px solid #1a272d;
-        height: 200px;
-        margin-top: auto;
-        margin-bottom: auto;
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-
-    /* SECTION 4 */
-    div.turtlebot-container4 {
-        display: flex;
-        justify-content: center;
-        padding: 0px 0px 60px 0px;
-    }
-
-    div.turtlebot-sec4-box1 {
-        width: 100%;
-        max-width: 1400px;
-        margin: 0px 40px 0px 40px;
-    }
-
-    b.all-titles {
-        font-size: 23px;
-    }
-
-    p.all-p {
-        max-width: 265px;
-        margin: 0px 15px 15px 15px;
-    }
-
-    table.turtlebot-sec4-table {
-        font-family: arial, sans-serif;
-        border-collapse: collapse;
-        width: 100%;
-    }
-
-    /* VS Images */
-    img.turtlebot-img {
-        width: 575px;
+        width: auto;
+        margin: 10px 300px 0px 300px;
     }
 
     img.turtlebot-logo {
-        width: 200px;
-        margin: auto;
-    }
-
-    img.vs-img {
-        width: 190px;
-    }
-
-    img.locobot-img {
-        width: 575px;
+        width: 150px;
     }
 
     img.locobot-logo {
-        width: 200px;
-        margin: auto;
+        width: 150px;
+    }
+}
+
+/* MOBILE */
+@media only screen and (max-width: 736px) {
+    h1.turtlebot-sec3-h1 {
+        font-size: 45px;
+        padding: 0px 0px 0px 0px;
     }
 
-    td.center-align {
-        /* border: 1px solid #dddddd; */
-        width: 615px;
-        padding: 20px;
-        text-align: center;
-        flex-flow: column;
+    div.turtlebot-sec3-line {
+        margin: 5px 150px 15px 150px;
     }
 
-    th.center-align-dark {
-        color: white;
-        background: #00cfff;
-        /* border: 1px solid #00cfff; */
-        /* border-top: 1.1px solid #00cfff; */
-        /* border-left: 1.1px solid #00cfff; */
-        text-align: center;
-        font-size: 20px;
+    img.turtlebot-logo {
+        width: 100px;
+        margin-top: 15px;
     }
 
-    th.center-align-light {
-        color: white;
-        background: #7be6ff;
-        /* border: 1px solid #7be6ff; */
-        /* border-left: 1.1px solid #7be6ff; */
-        text-align: center;
-        font-size: 20px;
+    img.locobot-logo {
+        width: 100px;
+    }
+}
+
+/* FLEX-ALL-SECTIONS */
+div.flex-all-left {
+    display: flex;
+    flex-flow: row-reverse;
+}
+
+div.flex-all-right {
+    display: flex;
+}
+
+div.vl {
+    border-left: 2px solid #1a272d;
+    height: 200px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* SECTION 4 */
+div.turtlebot-container4 {
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px 60px 0px;
+}
+
+div.turtlebot-sec4-box1 {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0px 40px 0px 40px;
+}
+
+th.center-align-product-base {
+    /* border: 1px solid #dddddd; */
+    padding: 8px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+b.all-titles {
+    font-size: 23px;
+    color: black;
+}
+
+p.all-p {
+    max-width: 265px;
+    margin: 0px 15px 15px 15px;
+    color: black;
+}
+
+table.turtlebot-sec4-table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td.center-align {
+    /* border: 1px solid #dddddd; */
+    width: 615px;
+    padding: 20px;
+    text-align: center;
+    flex-flow: column;
+}
+
+th.center-align-dark {
+    color: white;
+    background: #00cfff;
+    /* border: 1px solid #00cfff; */
+    /* border-top: 1.1px solid #00cfff; */
+    /* border-left: 1.1px solid #00cfff; */
+    text-align: center;
+    font-size: 20px;
+}
+
+th.center-align-light {
+    color: white;
+    background: #7be6ff;
+    /* border: 1px solid #7be6ff; */
+    /* border-left: 1.1px solid #7be6ff; */
+    text-align: center;
+    font-size: 20px;
+}
+
+b {
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+img.turtlebot-sec4-same {
+    width: 365px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.turtlebot-sec4-img {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p.create-3 {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+/* Computer */
+img.turtlebot-sec4-4gb {
+    width: 215px;
+    height: fit-content;
+    margin: auto;
+}
+
+label#com-right-img {
+    max-width: 215px;
+    height: fit-content;
+    margin: auto;
+}
+
+label#com-right-text {
+    max-width: fit-content;
+}
+
+/* LiDAR */
+img.turtlebot-sec4-a1m8 {
+    width: 215px;
+    height: fit-content;
+    margin: auto;
+}
+
+img.turtlebot-sec4-a2m8 {
+    width: 215px;
+    height: fit-content;
+    margin: auto;
+}
+
+/* Camera */
+img.turtlebot-sec4-oakd {
+    width: 215px;
+    height: fit-content;
+    margin: auto;
+}
+
+img.turtlebot-sec4-dynamixel {
+    width: 215px;
+    height: fit-content;
+    margin: auto;
+}
+
+/* Arm Section */
+img.turtlebot-sec4-noarm {
+    width: 215px;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+img.turtlebot-sec4-arm {
+    width: 150px;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* ROS - ROS2 */
+img.turtlebot-sec4-ros {
+    width: 215px;
+    height: fit-content;
+    margin: auto;
+}
+
+img.turtlebot-sec4-ros2 {
+    width: 215px;
+    height: fit-content;
+    margin: auto;
+}
+
+input#show {
+    display: none;
+}
+
+/* Responsive fix */
+@media only screen and (max-width: 1176px) {
+    div.turtlebot-container4 {
+        flex-wrap: wrap;
+    }
+}
+
+/* TABLET */
+@media only screen and (max-width: 1024px) {
+    div.turtlebot-container4 {
+        padding-bottom: 40px;
+        flex-flow: wrap;
     }
 
-    b {
-        margin-bottom: 30px;
-        margin-top: 20px;
+    div.turtlebot-sec4-box1 {
+        margin: 0px 40px 0px 40px;
     }
 
     img.turtlebot-sec4-same {
-        width: 365px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    img.turtlebot-sec4-img {
-        width: 250px;
-        margin-left: auto;
-        margin-right: auto;
+        width: 315px;
     }
 
     p.create-3 {
-        width: 500px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 30px;
+        font-size: 15px;
+    }
+
+    p.all-p {
+        font-size: 15px;
+    }
+
+    th.center-align-light {
+        font-size: 18px;
+    }
+}
+
+/* MOBILE */
+@media only screen and (max-width: 736px) {
+    div.turtlebot-container4 {
+        flex-wrap: wrap;
+        padding: 20px 0px 0px 0px;
+        margin-bottom: 20px;
+    }
+
+    div.turtlebot-sec4-box1 {
+        margin: 0px 0px 0px 0px;
+    }
+
+    img.turtlebot-sec4-same {
+        width: 215px;
+    }
+
+    p.create-3 {
+        font-size: 14px;
+    }
+
+    p.all-p {
+        font-size: 14px;
+        margin: 0px 0px 0px 0px;
+    }
+
+    th.center-align-light {
+        font-size: 16px;
+    }
+
+    div.vl {
+        display: none;
     }
 
     /* Computer */
     img.turtlebot-sec4-4gb {
-        width: 215px;
-        height: fit-content;
-        margin: auto;
+        display: none;
     }
 
-    img.turtlebot-sec4-8gb {
-        width: 215px;
-        height: fit-content;
-        margin: auto;
+    /* This will Hide the Image by default */
+    #show, #content {
+        display: none;
     }
 
-    /* LiDAR */
-    img.turtlebot-sec4-a1m8 {
-        width: 215px;
-        height: fit-content;
-        margin: auto;
+    /* When section is clicked / IMAGE will appear */
+    #show:checked~#content {
+        display: block;
     }
 
-    img.turtlebot-sec4-a2m8 {
-        width: 215px;
-        height: fit-content;
-        margin: auto;
+    /* When section is clicked / TEXT will disappear */
+    #show:checked~#more {
+        display: none;
     }
+}
 
-    /* Camera */
-    img.turtlebot-sec4-oakd {
-        width: 215px;
-        height: fit-content;
-        margin: auto;
-    }
+/* SECTION 5 */
+div.dobot-flex-container4 {
+    display: flex;
+    justify-content: center;
+    background: #e2f2fb;
+    margin-bottom: 10px;
+}
 
-    img.turtlebot-sec4-dynamixel {
-        width: 215px;
-        height: fit-content;
-        margin: auto;
-    }
+div.dobot-cr-box1 {
+    padding: 60px 50px 60px 120px;
+}
 
-    /* Arm Section */
-    img.turtlebot-sec4-noarm {
-        width: 215px;
-        height: fit-content;
-        margin-top: auto;
-        margin-bottom: auto;
-        margin-left: 16px;
-        margin-right: 16px;
-    }
+iframe.dobot-cr-video {
+    width: 700px;
+    height: 380px;
+    max-width: 100%;
+}
 
-    img.turtlebot-sec4-arm {
-        width: 150px;
-        height: fit-content;
-        margin-top: auto;
-        margin-bottom: auto;
-        margin-left: 50px;
-        margin-right: 50px;
-    }
+div.dobot-cr-box2 {
+    padding: 100px 120px 60px 50px;
+}
 
-    /* ROS - ROS2 */
-    img.turtlebot-sec4-ros {
-        width: 215px;
-        height: fit-content;
-        margin: auto;
-    }
+h1.dobot-cr-h1 {
+    max-width: 670px;
+    text-align: left;
+    font-size: 48px;
+    color: #1a272d;
+    margin-top: 0px;
+}
 
-    img.turtlebot-sec4-ros2 {
-        width: 215px;
-        height: fit-content;
-        margin: auto;
-    }
+div.dobot-cr-line {
+    height: 2px;
+    background: #1a272d;
+    margin: 10px 290px 15px 0px;
+}
 
-    /* Responsive fix */
-    @media only screen and (max-width: 1176px) {
-        div.turtlebot-container4 {
-            flex-wrap: wrap;
-        }
-    }
+p.dobot-cr-p {
+    max-width: 670px;
+    text-align: justify;
+}
 
-    /* TABLET */
-    @media only screen and (max-width: 1024px) {
-        div.turtlebot-container4 {
-            padding-bottom: 40px;
-            flex-flow: wrap;
-        }
-
-        div.turtlebot-sec4-box1 {
-            margin: 0px 40px 0px 40px;
-        }
-    }
-
-    /* MOBILE */
-    @media only screen and (max-width: 736px) {
-        div.turtlebot-container4 {
-            flex-wrap: wrap;
-            padding: 20px 0px 0px 0px;
-            margin-bottom: 20px;
-        }
-
-        div.turtlebot-sec4-box1 {
-            margin: 0px 0px 0px 0px;
-        }
-
-        th.table-blank-square {
-            width: auto;
-        }
-    }
-
-    /* SECTION 5 */
+/* TABLET */
+@media only screen and (max-width: 1024px) {
     div.dobot-flex-container4 {
-        display: flex;
-        justify-content: center;
-        background: #e2f2fb;
-        margin-bottom: 10px;
+        flex-flow: wrap-reverse;
     }
 
     div.dobot-cr-box1 {
-        padding: 60px 50px 60px 120px;
+        padding: 20px 100px 40px 100px;
     }
 
     iframe.dobot-cr-video {
-        width: 700px;
-        height: 380px;
-        max-width: 100%;
+        width: 650px;
+        height: 340px;
     }
 
     div.dobot-cr-box2 {
-        padding: 100px 120px 60px 50px;
+        padding: 40px 100px 20px 100px;
     }
 
     h1.dobot-cr-h1 {
-        max-width: 670px;
         text-align: left;
-        font-size: 48px;
-        color: #1a272d;
-        margin-top: 0px;
+        max-width: 100%;
     }
 
     div.dobot-cr-line {
-        height: 2px;
-        background: #1a272d;
-        margin: 10px 290px 15px 0px;
+        margin: 10px 400px 15px 0px;
     }
 
     p.dobot-cr-p {
-        max-width: 670px;
-        text-align: justify;
+        font-size: 15px;
+        max-width: 100%;
+        margin-bottom: 0px;
+    }
+}
+
+/* MOBILE */
+@media only screen and (max-width: 736px) {
+    div.dobot-cr-box1 {
+        padding: 0px 30px 40px 30px;
     }
 
-    /* TABLET */
-    @media only screen and (max-width: 1024px) {
-        div.dobot-flex-container4 {
-            flex-flow: wrap-reverse;
-        }
-
-        div.dobot-cr-box1 {
-            padding: 20px 100px 40px 100px;
-        }
-
-        iframe.dobot-cr-video {
-            width: 650px;
-            height: 340px;
-        }
-
-        div.dobot-cr-box2 {
-            padding: 40px 100px 20px 100px;
-        }
-
-        h1.dobot-cr-h1 {
-            text-align: left;
-            max-width: 100%;
-        }
-
-        div.dobot-cr-line {
-            margin: 10px 400px 15px 0px;
-        }
-
-        p.dobot-cr-p {
-            font-size: 15px;
-            max-width: 100%;
-            margin-bottom: 0px;
-        }
+    iframe.dobot-cr-video {
+        width: 420px;
+        height: 220px;
     }
 
-    /* MOBILE */
-    @media only screen and (max-width: 736px) {
-        div.dobot-cr-box1 {
-            padding: 0px 30px 40px 30px;
-        }
-
-        iframe.dobot-cr-video {
-            width: 420px;
-            height: 220px;
-        }
-
-        div.dobot-cr-box2 {
-            padding: 30px 30px 20px 30px;
-        }
-
-        h1.dobot-cr-h1 {
-            font-size: 45px;
-            text-align: left;
-        }
-
-        div.dobot-cr-line {
-            margin: 10px 200px 15px 0px;
-        }
-
-        p.dobot-cr-p {
-            font-size: 14px;
-        }
+    div.dobot-cr-box2 {
+        padding: 30px 30px 20px 30px;
     }
 
-    /* BOTH CHARTS */
-    /* a.turtlebot-sec-link-all {
+    h1.dobot-cr-h1 {
+        font-size: 45px;
+        text-align: left;
+    }
+
+    div.dobot-cr-line {
+        margin: 10px 200px 15px 0px;
+    }
+
+    p.dobot-cr-p {
+        font-size: 14px;
+    }
+}
+
+/* BOTH CHARTS */
+/* a.turtlebot-sec-link-all {
     margin-top: 5px;
     margin-bottom: 5px;
 } */
 
+a.turtlebot-sec-link2-all {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+td,
+th {
+    /* border: 1px solid #dddddd; */
+    text-align: left;
+    padding: 8px;
+}
+
+/* Color of tables */
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+tr.first:nth-child(odd) {
+    background-color: #dddddd;
+}
+
+tr.first:nth-child(even) {
+    background-color: white;
+}
+
+/* TABLET */
+@media only screen and (max-width: 1024px) {
+    /* a.turtlebot-sec-link-all {
+        font-size: 2vw;
+    } */
+
     a.turtlebot-sec-link2-all {
-        margin-top: 5px;
-        margin-bottom: 5px;
+        font-size: 2vw;
     }
 
     td,
     th {
-        /* border: 1px solid #dddddd; */
-        text-align: left;
-        padding: 8px;
+        font-size: 15px;
     }
+}
 
-    /* Color of tables */
-    tr:nth-child(even) {
-        background-color: #dddddd;
-    }
-
-    tr.first:nth-child(odd) {
-        background-color: #dddddd;
-    }
-
-    tr.first:nth-child(even) {
-        background-color: white;
-    }
-
-    /* TABLET */
-    @media only screen and (max-width: 1024px) {
-        /* a.turtlebot-sec-link-all {
-        font-size: 2vw;
-    } */
-
-        a.turtlebot-sec-link2-all {
-            font-size: 2vw;
-        }
-
-        td,
-        th {
-            font-size: 15px;
-        }
-    }
-
-    /* MOBILE */
-    @media only screen and (max-width: 736px) {
-        /* a.turtlebot-sec-link-all {
+/* MOBILE */
+@media only screen and (max-width: 736px) {
+    /* a.turtlebot-sec-link-all {
         font-size: 10px;
         margin: 5px 0px 0px 0px;
     } */
 
-        a.turtlebot-sec-link2-all {
-            font-size: 10px;
-        }
-
-        td,
-        th {
-            font-size: 11px;
-            padding: 5px;
-            width: 100px;
-        }
+    a.turtlebot-sec-link2-all {
+        font-size: 10px;
     }
 
-    /* SECTION 6 */
+    td,
+    th {
+        font-size: 11px;
+        padding: 5px;
+        width: 100px;
+    }
+}
+
+/* SECTION 6 */
+div.turtlebot-container6 {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px 25px 0px;
+}
+
+div.turtlebot-sec6-box1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px 40px 0px 40px;
+}
+
+h1.turtlebot-sec6-h1 {
+    font-size: 62px;
+    text-align: center;
+    color: #1a272d;
+    margin: 0px 0px 0px 0px;
+}
+
+div.turtlebot-sec6-line {
+    height: 2px;
+    background: #1a272d;
+    margin: 15px 450px 30px 450px;
+}
+
+table.turtlebot-sec6-table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th.table-blank-square {
+    width: 135px;
+}
+
+h1.turtlebot-sec6-models1,
+h1.turtlebot-sec6-models2,
+h1.turtlebot-sec6-models3,
+h1.turtlebot-sec6-models4 {
+    font-size: 17px;
+    text-align: center;
+    color: #1a272d;
+}
+
+/* Responsive fix */
+@media only screen and (max-width: 1176px) {
+    div.turtlebot-container4 {
+        flex-wrap: wrap;
+    }
+}
+
+/* TABLET */
+@media only screen and (max-width: 1024px) {
     div.turtlebot-container6 {
-        display: flex;
-        justify-content: center;
-        padding: 40px 0px 25px 0px;
+        padding-bottom: 40px;
+        flex-flow: wrap;
     }
 
     div.turtlebot-sec6-box1 {
-        width: 100%;
-        max-width: 1200px;
         margin: 0px 40px 0px 40px;
     }
 
     h1.turtlebot-sec6-h1 {
-        font-size: 62px;
-        text-align: center;
-        color: #1a272d;
-        margin: 0px 0px 0px 0px;
+        font-size: 6vw;
     }
 
     div.turtlebot-sec6-line {
-        height: 2px;
-        background: #1a272d;
-        margin: 15px 450px 30px 450px;
+        width: auto;
+        margin: 10px 300px 20px 300px;
+    }
+}
+
+/* MOBILE */
+@media only screen and (max-width: 736px) {
+    div.turtlebot-container6 {
+        flex-wrap: wrap;
+        padding: 20px 0px 0px 0px;
+        margin-bottom: 20px;
     }
 
-    table.turtlebot-sec6-table {
-        font-family: arial, sans-serif;
-        border-collapse: collapse;
-        width: 100%;
+    div.turtlebot-sec6-box1 {
+        margin: 0px 0px 0px 0px;
     }
 
     th.table-blank-square {
-        width: 135px;
+        width: auto;
     }
 
-    h1.turtlebot-sec6-models1,
-    h1.turtlebot-sec6-models2,
-    h1.turtlebot-sec6-models3,
-    h1.turtlebot-sec6-models4 {
-        font-size: 17px;
-        text-align: center;
-        color: #1a272d;
+    h1.turtlebot-sec6-h1 {
+        font-size: 45px;
+        padding: 0px 0px 0px 0px;
     }
 
-    /* Responsive fix */
-    @media only screen and (max-width: 1176px) {
-        div.turtlebot-container4 {
-            flex-wrap: wrap;
-        }
+    div.turtlebot-sec6-line {
+        margin: 5px 150px 15px 150px;
     }
+}
 
-    /* TABLET */
-    @media only screen and (max-width: 1024px) {
-        div.turtlebot-container6 {
-            padding-bottom: 40px;
-            flex-flow: wrap;
-        }
+/* SECTION 7 */
+div.locobot-container10 {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    background: #ededed;
+}
 
-        div.turtlebot-sec6-box1 {
-            margin: 0px 40px 0px 40px;
-        }
+div.locobot-left-wrap {
+    flex-wrap: wrap;
+    width: 1100px;
+    background: #ededed;
+}
 
-        h1.turtlebot-sec6-h1 {
-            font-size: 6vw;
-        }
+h1.locobot-questions {
+    font-size: 3.5vw;
+    color: #1a272d;
+}
 
-        div.turtlebot-sec6-line {
-            width: auto;
-            margin: 10px 300px 20px 300px;
-        }
-    }
+div.locobot-line {
+    height: 2px;
+    background: #1a272d;
+    margin: 10px 215px 15px 0px;
+}
 
-    /* MOBILE */
-    @media only screen and (max-width: 736px) {
-        div.turtlebot-container6 {
-            flex-wrap: wrap;
-            padding: 20px 0px 0px 0px;
-            margin-bottom: 20px;
-        }
+div.unitree-contact-box2 {
+    width: 100%;
+    height: 50px;
+    background: #ededed;
+}
 
-        div.turtlebot-sec6-box1 {
-            margin: 0px 0px 0px 0px;
-        }
+img.unitree-contact-img2 {
+    /* transform: scaleX(-1); */
+    width: 408px;
+}
 
-        th.table-blank-square {
-            width: auto;
-        }
+/* Contact form field edits */
+div#ctl45_dvControl {
+    margin-top: 0px;
+}
 
-        h1.turtlebot-sec6-h1 {
-            font-size: 45px;
-            padding: 0px 0px 0px 0px;
-        }
+/* Edits the text area for the contact form */
+input#ctl45_ctlContactForm_rpFormField_ctl00_txtField,
+input#ctl45_ctlContactForm_rpFormField_ctl01_txtField,
+input#ctl45_ctlContactForm_rpFormField_ctl02_txtField,
+input#ctl45_ctlContactForm_rpFormField_ctl03_txtField,
+input#ctl45_ctlContactForm_rpFormField_ctl04_txtField,
+input#ctl45_ctlContactForm_rpFormField_ctl05_txtField {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #333333;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    resize: vertical;
+}
 
-        div.turtlebot-sec6-line {
-            margin: 5px 150px 15px 150px;
-        }
-    }
+/* Color of border on hover */
+input#ctl45_ctlContactForm_rpFormField_ctl00_txtField:hover,
+input#ctl45_ctlContactForm_rpFormField_ctl01_txtField:hover,
+input#ctl45_ctlContactForm_rpFormField_ctl02_txtField:hover,
+input#ctl45_ctlContactForm_rpFormField_ctl03_txtField:hover,
+input#ctl45_ctlContactForm_rpFormField_ctl04_txtField:hover,
+input#ctl45_ctlContactForm_rpFormField_ctl05_txtField:hover {
+    border: 1px solid #007cc4;
+}
 
-    /* SECTION 7 */
-    div.locobot-container10 {
-        display: flex;
-        margin-top: 40px;
-        justify-content: center;
-        background: #ededed;
-    }
+/* Makes message box longer */
+input#ctl45_ctlContactForm_rpFormField_ctl05_txtField {
+    padding-bottom: 120px;
+}
 
+/* Style the submit button with a specific background color etc */
+input#ctl45_ctlContactForm_btnSubmit {
+    background-color: #007cc4;
+    color: white;
+    padding: 15px 50px;
+    margin-top: 0px;
+    border: none;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input#ctl45_ctlContactForm_btnSubmit:hover {
+    background-color: white;
+    color: #007cc4;
+}
+
+/* Closes gap between title text & name section */
+div#ctl45_dvControl.Control.ContactForm.Control_12777 {
+    margin-top: 0px;
+}
+
+input#ctl45_ctlContactForm_rpFormField_ctl06_rblFields_1 {
+    margin-left: 15px;
+}
+
+figure.unitree-secondimg-background {
+    background: #ededed;
+}
+
+
+/* DESKTOP */
+@media only screen and (max-width: 2565px) {
     div.locobot-left-wrap {
-        flex-wrap: wrap;
-        width: 1100px;
-        background: #ededed;
+        width: auto;
     }
 
-    h1.locobot-questions {
-        font-size: 3.5vw;
-        color: #1a272d;
+    img.locobot-banner {
+        width: 1430px;
     }
 
-    div.locobot-line {
-        height: 2px;
-        background: #1a272d;
-        margin: 10px 215px 15px 0px;
+    div.contact-info {
+        max-width: 1135px;
     }
 
-    div.unitree-contact-box2 {
-        width: 100%;
-        height: 50px;
-        background: #ededed;
+    figure.unitree-secondimg-background {
+        width: 530px;
     }
 
     img.unitree-contact-img2 {
-        /* transform: scaleX(-1); */
-        width: 408px;
+        width: 100%;
     }
+}
 
-    /* Contact form field edits */
-    div#ctl45_dvControl {
+/* TABLET */
+@media only screen and (max-width: 1024px) {
+    div.locobot-container10 {
+        flex-flow: wrap;
+        justify-content: center;
         margin-top: 0px;
     }
 
-    /* Edits the text area for the contact form */
+    h1.locobot-questions {
+        font-size: 60px;
+    }
+
+    div.locobot-line {
+        margin: 10px 326px 15px 0px;
+    }
+
+    img.unitree-contact-img2 {
+        display: none;
+    }
+}
+
+/* MOBILE */
+@media only screen and (max-width: 736px) {
+    div.locobot-container10 {
+        flex-flow: wrap;
+        margin-bottom: 0PX;
+    }
+
+    div.contact-info {
+        padding: 35px 30px 30px 30px;
+    }
+
+    h1.locobot-questions {
+        font-size: 44px;
+        margin-top: 0px;
+    }
+
+    div.locobot-line {
+        margin: 10px 165px 15px 0px;
+    }
+
     input#ctl45_ctlContactForm_rpFormField_ctl00_txtField,
     input#ctl45_ctlContactForm_rpFormField_ctl01_txtField,
     input#ctl45_ctlContactForm_rpFormField_ctl02_txtField,
     input#ctl45_ctlContactForm_rpFormField_ctl03_txtField,
     input#ctl45_ctlContactForm_rpFormField_ctl04_txtField,
     input#ctl45_ctlContactForm_rpFormField_ctl05_txtField {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #333333;
-        border-radius: 4px;
-        box-sizing: border-box;
-        margin-top: 6px;
-        margin-bottom: 10px;
-        resize: vertical;
+        padding: 10px;
+        margin-top: 1px;
+        margin-bottom: 0px;
     }
+}
 
-    /* Color of border on hover */
-    input#ctl45_ctlContactForm_rpFormField_ctl00_txtField:hover,
-    input#ctl45_ctlContactForm_rpFormField_ctl01_txtField:hover,
-    input#ctl45_ctlContactForm_rpFormField_ctl02_txtField:hover,
-    input#ctl45_ctlContactForm_rpFormField_ctl03_txtField:hover,
-    input#ctl45_ctlContactForm_rpFormField_ctl04_txtField:hover,
-    input#ctl45_ctlContactForm_rpFormField_ctl05_txtField:hover {
-        border: 1px solid #007cc4;
-    }
-
-    /* Makes message box longer */
-    input#ctl45_ctlContactForm_rpFormField_ctl05_txtField {
-        padding-bottom: 120px;
-    }
-
-    /* Style the submit button with a specific background color etc */
-    input#ctl45_ctlContactForm_btnSubmit {
-        background-color: #007cc4;
-        color: white;
-        padding: 15px 50px;
-        margin-top: 0px;
-        border: none;
-        cursor: pointer;
-    }
-
-    /* When moving the mouse over the submit button, add a darker green color */
-    input#ctl45_ctlContactForm_btnSubmit:hover {
-        background-color: white;
-        color: #007cc4;
-    }
-
-    /* Closes gap between title text & name section */
-    div#ctl45_dvControl.Control.ContactForm.Control_12777 {
-        margin-top: 0px;
-    }
-
-    input#ctl45_ctlContactForm_rpFormField_ctl06_rblFields_1 {
-        margin-left: 15px;
-    }
-
-    figure.unitree-secondimg-background {
-        background: #ededed;
-    }
-
-
-    /* DESKTOP */
-    @media only screen and (max-width: 2565px) {
-        div.locobot-left-wrap {
-            width: auto;
-        }
-
-        img.locobot-banner {
-            width: 1430px;
-        }
-
-        div.contact-info {
-            max-width: 1135px;
-        }
-
-        figure.unitree-secondimg-background {
-            width: 530px;
-        }
-
-        img.unitree-contact-img2 {
-            width: 100%;
-        }
-    }
-
-    /* TABLET */
-    @media only screen and (max-width: 1024px) {
-        div.locobot-container10 {
-            flex-flow: wrap;
-            justify-content: center;
-            margin-top: 0px;
-        }
-
-        h1.locobot-questions {
-            font-size: 60px;
-        }
-
-        div.locobot-line {
-            margin: 10px 326px 15px 0px;
-        }
-
-        img.unitree-contact-img2 {
-            display: none;
-        }
-    }
-
-    /* MOBILE */
-    @media only screen and (max-width: 736px) {
-        div.locobot-container10 {
-            flex-flow: wrap;
-            margin-bottom: 0PX;
-        }
-
-        div.contact-info {
-            padding: 35px 30px 30px 30px;
-        }
-
-        h1.locobot-questions {
-            font-size: 44px;
-            margin-top: 0px;
-        }
-
-        div.locobot-line {
-            margin: 10px 165px 15px 0px;
-        }
-
-        input#ctl45_ctlContactForm_rpFormField_ctl00_txtField,
-        input#ctl45_ctlContactForm_rpFormField_ctl01_txtField,
-        input#ctl45_ctlContactForm_rpFormField_ctl02_txtField,
-        input#ctl45_ctlContactForm_rpFormField_ctl03_txtField,
-        input#ctl45_ctlContactForm_rpFormField_ctl04_txtField,
-        input#ctl45_ctlContactForm_rpFormField_ctl05_txtField {
-            padding: 10px;
-            margin-top: 1px;
-            margin-bottom: 0px;
-        }
-    }
-
-    label {
-        color: white !important;
-    }
+label {
+    color: white !important;
+}
 </style>

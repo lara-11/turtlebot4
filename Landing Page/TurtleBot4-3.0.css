@@ -154,22 +154,10 @@ iframe.locobot-sec2-video {
 }
 
 /* SECTION 3 */
-/* div.turtlebot-container2 {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
-} */
-
 div.turtlebot-container3 {
-    padding: 30px 0px 30px 0px;
+    padding: 30px 0px 20px 0px;
     background: #e2f2fb;
     margin-bottom: 10px;
-}
-
-div.turtlebot-sec3-box1 {
-    width: 100%;
-    max-width: 1300px;
-    margin: 0px 40px 0px 40px;
 }
 
 h1.turtlebot-sec3-h1 {
@@ -182,7 +170,7 @@ h1.turtlebot-sec3-h1 {
 div.turtlebot-sec3-line {
     height: 2px;
     background: #1a272d;
-    margin: 15px 800px 10px 800px;
+    margin: 15px 800px 0px 800px;
 }
 
 div.vs-comparison {
@@ -200,46 +188,73 @@ figure.center-align-product {
     flex-flow: column;
 }
 
+/* VS Images */
+img.turtlebot-img {
+    width: 575px;
+}
+
+img.turtlebot-logo {
+    width: 200px;
+    margin: auto;
+}
+
+img.vs-img {
+    width: 190px;
+}
+
+img.locobot-img {
+    width: 575px;
+}
+
+img.locobot-logo {
+    width: 200px;
+    margin: auto;
+    margin-top: 15px;
+}
+
 /* Responsive fix */
-/* @media only screen and (max-width: 1176px) {
-    div.turtlebot-container2 {
+@media only screen and (max-width: 1700px) {
+    div.turtlebot-sec3-line {
+        margin: 10px 650px 0px 650px;
+    }
+}
+
+/* Responsive fix */
+@media only screen and (max-width: 1400px) {
+    div.turtlebot-sec3-line {
+        margin: 10px 500px 0px 500px;
+    }
+}
+
+/* Responsive fix */
+@media only screen and (max-width: 1176px) {
+    div.turtlebot-container3 {
         flex-wrap: wrap;
     }
-} */
+}
 
 /* TABLET */
 @media only screen and (max-width: 1024px) {
-    /*div.turtlebot-container2 {
-        padding-bottom: 40px;
-        flex-flow: wrap;
-    } */
-
-    div.turtlebot-sec3-box1 {
-        margin: 0px 40px 0px 40px;
-    }
-
     h1.turtlebot-sec3-h1 {
         font-size: 6vw;
     }
 
     div.turtlebot-sec3-line {
         width: auto;
-        margin: 10px 300px 20px 300px;
+        margin: 10px 300px 0px 300px;
+    }
+
+    img.turtlebot-logo {
+        width: 150px;
+    }
+
+    img.locobot-logo {
+        width: 150px;
     }
 }
 
 /* MOBILE */
 @media only screen and (max-width: 736px) {
-    /* div.turtlebot-container2 {
-        flex-wrap: wrap;
-        padding: 20px 0px 0px 0px;
-        margin-bottom: 20px;
-    } */
-
-    div.turtlebot-sec3-box1 {
-        margin: 0px 0px 0px 0px;
-    }
-
     h1.turtlebot-sec3-h1 {
         font-size: 45px;
         padding: 0px 0px 0px 0px;
@@ -248,37 +263,14 @@ figure.center-align-product {
     div.turtlebot-sec3-line {
         margin: 5px 150px 15px 150px;
     }
-}
 
-/* SECTION 3 */
-/* div.turtlebot-container3 {
-    display: flex;
-    justify-content: center;
-    background-color: #dddddd;
-} */
+    img.turtlebot-logo {
+        width: 100px;
+        margin-top: 15px;
+    }
 
-/* div.turtlebot-sec3-box1 {
-    width: 100%;
-    max-width: 1250px;
-    margin: 0px 40px 0px 40px;
-} */
-
-h1.create-title-h1 {
-    margin: 30px 0px 30px 0px;
-}
-
-th.center-align-product-base {
-    /* border: 1px solid #dddddd; */
-    padding: 8px;
-    text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-/* Responsive fix */
-@media only screen and (max-width: 1176px) {
-    div.turtlebot-container3 {
-        flex-wrap: wrap;
+    img.locobot-logo {
+        width: 100px;
     }
 }
 
@@ -314,42 +306,29 @@ div.turtlebot-sec4-box1 {
     margin: 0px 40px 0px 40px;
 }
 
+th.center-align-product-base {
+    /* border: 1px solid #dddddd; */
+    padding: 8px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 b.all-titles {
     font-size: 23px;
+    color: black;
 }
 
 p.all-p {
     max-width: 265px;
     margin: 0px 15px 15px 15px;
+    color: black;
 }
 
 table.turtlebot-sec4-table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
-}
-
-/* VS Images */
-img.turtlebot-img {
-    width: 575px;
-}
-
-img.turtlebot-logo {
-    width: 200px;
-    margin: auto;
-}
-
-img.vs-img {
-    width: 190px;
-}
-
-img.locobot-img {
-    width: 575px;
-}
-
-img.locobot-logo {
-    width: 200px;
-    margin: auto;
 }
 
 td.center-align {
@@ -397,7 +376,7 @@ img.turtlebot-sec4-img {
 }
 
 p.create-3 {
-    width: 500px;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
@@ -410,10 +389,14 @@ img.turtlebot-sec4-4gb {
     margin: auto;
 }
 
-img.turtlebot-sec4-8gb {
-    width: 215px;
+label#com-right-img {
+    max-width: 215px;
     height: fit-content;
     margin: auto;
+}
+
+label#com-right-text {
+    max-width: fit-content;
 }
 
 /* LiDAR */
@@ -474,6 +457,10 @@ img.turtlebot-sec4-ros2 {
     margin: auto;
 }
 
+input#show {
+    display: none;
+}
+
 /* Responsive fix */
 @media only screen and (max-width: 1176px) {
     div.turtlebot-container4 {
@@ -491,6 +478,22 @@ img.turtlebot-sec4-ros2 {
     div.turtlebot-sec4-box1 {
         margin: 0px 40px 0px 40px;
     }
+
+    img.turtlebot-sec4-same {
+        width: 315px;
+    }
+
+    p.create-3 {
+        font-size: 15px;
+    }
+
+    p.all-p {
+        font-size: 15px;
+    }
+
+    th.center-align-light {
+        font-size: 18px;
+    }
 }
 
 /* MOBILE */
@@ -505,8 +508,45 @@ img.turtlebot-sec4-ros2 {
         margin: 0px 0px 0px 0px;
     }
 
-    th.table-blank-square {
-        width: auto;
+    img.turtlebot-sec4-same {
+        width: 215px;
+    }
+
+    p.create-3 {
+        font-size: 14px;
+    }
+
+    p.all-p {
+        font-size: 14px;
+        margin: 0px 0px 0px 0px;
+    }
+
+    th.center-align-light {
+        font-size: 16px;
+    }
+
+    div.vl {
+        display: none;
+    }
+
+    /* Computer */
+    img.turtlebot-sec4-4gb {
+        display: none;
+    }
+
+    /* This will Hide the Image by default */
+    #show, #content {
+        display: none;
+    }
+
+    /* When section is clicked / IMAGE will appear */
+    #show:checked~#content {
+        display: block;
+    }
+
+    /* When section is clicked / TEXT will disappear */
+    #show:checked~#more {
+        display: none;
     }
 }
 
