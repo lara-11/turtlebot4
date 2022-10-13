@@ -544,6 +544,38 @@ label#camera-right-img {
     margin: auto;
 }
 
+/* Fourth point two Section 4 */
+/* Camera Mount */
+div.fourthp2-left-fit-auto {
+    height: fit-content;
+    margin: auto;
+}
+
+div.fourthp2-right-fit-auto {
+    height: fit-content;
+    margin: auto;
+}
+
+input#show5add {
+    display: none;
+}
+
+input#show6add {
+    display: none;
+}
+
+label#camera-mount-left-img {
+    max-width: 215px;
+    height: fit-content;
+    margin: auto;
+}
+
+label#camera-mount-right-img {
+    max-width: 215px;
+    height: fit-content;
+    margin: auto;
+}
+
 /* Fifth Section 4 */
 /* Arm Section */
 div.fifth-left-fit-auto {
@@ -577,7 +609,7 @@ label#arm-right-img {
 }
 
 /* Sixth Section 4 */
-/* ROS - ROS2 */
+/* ROS - ROS 2 */
 div.sixth-left-fit-auto {
     height: fit-content;
     margin: auto;
@@ -649,7 +681,7 @@ input#show {
 
 /* Responsive fix */
 @media only screen and (max-width: 965px) {
-    img.turtlebot-sec4-4gb, img.turtlebot-sec4-8gb, img.turtlebot-sec4-a1m8, img.turtlebot-sec4-a2m8, img.turtlebot-sec4-oakd, img.turtlebot-sec4-dynamixel, img.turtlebot-sec4-noarm, img.turtlebot-sec4-arm, img.turtlebot-sec4-ros, img.turtlebot-sec4-ros2 {
+    img.turtlebot-sec4-4gb, img.turtlebot-sec4-8gb, img.turtlebot-sec4-a1m8, img.turtlebot-sec4-a2m8, img.turtlebot-sec4-oakd, img.turtlebot-sec4-dynamixel, img.turtlebot-sec4-noarm, img.turtlebot-sec4-arm, img.turtlebot-sec4-ros, img.turtlebot-sec4-ros2, img.turtlebot-sec4p2-nomount, img.turtlebot-sec4p2-mount {
         display: none;
     }
 
@@ -660,7 +692,7 @@ input#show {
 
 /* MOBILE */
 @media only screen and (max-width: 736px) {
-    img.turtlebot-sec4-4gb, img.turtlebot-sec4-8gb, img.turtlebot-sec4-a1m8, img.turtlebot-sec4-a2m8, img.turtlebot-sec4-oakd, img.turtlebot-sec4-dynamixel, img.turtlebot-sec4-noarm, img.turtlebot-sec4-arm, img.turtlebot-sec4-ros, img.turtlebot-sec4-ros2 {
+    img.turtlebot-sec4-4gb, img.turtlebot-sec4-8gb, img.turtlebot-sec4-a1m8, img.turtlebot-sec4-a2m8, img.turtlebot-sec4-oakd, img.turtlebot-sec4-dynamixel, img.turtlebot-sec4-noarm, img.turtlebot-sec4-arm, img.turtlebot-sec4-ros, img.turtlebot-sec4-ros2, img.turtlebot-sec4p2-nomount, img.turtlebot-sec4p2-mount {
         display: block;
     }
 
@@ -814,6 +846,40 @@ input#show {
         display: none;
     }
 
+    /* Fourth point two Section 4 */
+    /* Camera */
+    /* This will Hide the Image by default */
+    #show5add,
+    #content5add {
+        display: none;
+    }
+
+    /* When section is clicked / IMAGE will appear */
+    #show5add:checked~#content5add {
+        display: block;
+    }
+
+    /* When section is clicked / TEXT will disappear */
+    #show5add:checked~#more5add {
+        display: none;
+    }
+
+    /* This will Hide the Image by default */
+    #show6add,
+    #content6add {
+        display: none;
+    }
+
+    /* When section is clicked / IMAGE will appear */
+    #show6add:checked~#content6add {
+        display: block;
+    }
+
+    /* When section is clicked / TEXT will disappear */
+    #show6add:checked~#more6add {
+        display: none;
+    }
+
     /* Fifth Section 4 */
     /* Arm Section */
     /* This will Hide the Image by default */
@@ -849,7 +915,7 @@ input#show {
     }
 
     /* Sixth Section 4 */
-    /* ROS - ROS2 */
+    /* ROS - ROS 2 */
     /* This will Hide the Image by default */
     #show9,
     #content9 {
